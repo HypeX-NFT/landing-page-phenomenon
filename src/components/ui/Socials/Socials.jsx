@@ -4,11 +4,11 @@ import clsx from 'clsx';
 import classes from './Socials.module.css';
 
 const socials = [
-    { href: 'https://twitter.com', id: 'twitter' },
-    { href: 'https://web.telegram.org', id: 'telegram' },
-    { href: 'https://discord.com', id: 'discord' },
-    { href: 'https://medium.com', id: 'medium' },
-    { href: 'https://www.instagram.com', id: 'instagram' },
+    { href: 'https://twitter.com/HypeX_io', id: 'twitter' },
+    { href: 'https://t.me/HypeX_Official', id: 'telegram' },
+    { href: 'https://discord.com/invite/hypeX', id: 'discord' },
+    { href: 'https://medium.com/hypex-nft', id: 'medium' },
+    { href: 'https://www.instagram.com/HypeX_io/', id: 'instagram' },
 ];
 
 const Socials = props => {
