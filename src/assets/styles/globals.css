@@ -1,0 +1,112 @@
+@import "~normalize.css/normalize.css";
+@import "./reset.css";
+
+@keyframes circle-1 {
+    50% {
+        transform: translate3d(50%, 50%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes circle-2 {
+    50% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+:root {
+    /* Fonts */
+    --primary-font: "century-gothic", sans-serif;
+    --secondary-font: "Josefin Sans", sans-serif;
+    --third-font: "aldo-the-apache", sans-serif;
+
+    /* Colors */
+    --color-purple-50: #a054ff;
+    --color-purple-100: #8122ff;
+    --color-purple-200: #5e01d4;
+    --color-purple-300: #4f00b4;
+    --color-purple-400: #40018e;
+    --color-purple-500: #3d0680;
+    --color-purple-600: #570683;
+    --color-pink-100: #f5cfff;
+    --color-pink-200: #cba4ff;
+    --color-pink-300: #e2a4ff;
+    --color-pink-500: #cf69ff;
+    --color-grey-100: #ededed;
+    --color-black-400: #140329;
+    --color-black-500: #000000;
+    --color-primary: #ffffff;
+    --color-secondary: var(--color-purple-100);
+
+    /* Gradients */
+    --blob-hero-gradient-desktop: linear-gradient(57.09deg, #000000 35.05%, #2e0068 67.17%, #5e00d4 84.79%);
+    --blob-gradient: linear-gradient(63.22deg, #000000 14.87%, #5e00d4 86.2%);
+
+    /* Sizes */
+    --container-width: 1360px;
+    --container-half-padding-desktop: 30px;
+    --container-half-padding-mobile: 20px;
+
+    /* Animations */
+    --animation1: circle-1;
+    --animation2: circle-2;
+}
+
+html {
+    background-color: var(--color-purple-500);
+    background-image: url("../images/page-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.lock-scroll-y {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.d-block {
+    display: block;
+}
+
+.color-text-primary {
+    color: var(--color-purple-100);
+}
+
+.color-text-secondary {
+    color: var(--color-pink-300);
+}

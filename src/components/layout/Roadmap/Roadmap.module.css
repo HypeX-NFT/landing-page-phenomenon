@@ -1,0 +1,221 @@
+.roadmap {
+    padding-top: 60px;
+    background-color: var(--color-purple-400);
+    background-image: url("../../../assets/images/roadmap-text.png");
+    background-image: image-set(url("../../../assets/images/roadmap-text.webp"));
+    background-size: cover;
+    background-position: center;
+}
+
+.roadmapTitle {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.roadmapInner {
+    padding: 60px 0 30px;
+    overflow: auto;
+}
+
+.roadmapBox {
+    margin: 0 auto;
+    max-width: var(--container-width);
+    width: 100%;
+    padding: 0 var(--container-half-padding-desktop);
+    position: relative;
+    height: 610px;
+}
+
+.roadmapBoxImg {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.roadmapList {
+    height: 450px;
+}
+
+.roadmapItem {
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(103.68deg, rgba(101, 1, 227, 0.2) 7.14%, rgba(47, 3, 103, 0.2) 74.4%);
+    box-shadow: -2px 4px 138px rgba(0, 240, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    width: 255px;
+}
+
+.roadmapItem:nth-child(1) {
+    top: 20px;
+    left: 85px;
+}
+
+.roadmapItem:nth-child(2) {
+    top: 65px;
+    left: 475px;
+}
+
+.roadmapItem:nth-child(3) {
+    top: 210px;
+    left: 850px;
+}
+
+.roadmapItem:nth-child(4) {
+    top: -55px;
+    left: 1133px;
+}
+
+.roadmapItem::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(103.68deg, rgba(113, 0, 255, 0.3) 7.14%, rgba(59, 1, 133, 0.3) 74.4%);
+}
+
+.roadmapItemTitle {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: var(--color-purple-50);
+}
+
+.roadmapItemDescription {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.roadmapItemDescription ul + ul {
+    margin-top: 20px;
+}
+
+.roadmapItemDescription ul ul {
+    padding-left: 20px;
+}
+
+.roadmapItemArrow {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 19px;
+    width: 36px;
+}
+
+@media (max-width: 767px) {
+    .roadmapTitle {
+        font-size: 45px;
+    }
+
+    .roadmapBox {
+        padding: 0 var(--container-half-padding-mobile);
+    }
+}
+
+@media (max-width: 479px) {
+    .roadmapTitle {
+        font-size: 24px;
+    }
+
+    .roadmapInner {
+        padding: 50px 0 0;
+    }
+
+    .roadmapBox {
+        height: 690px;
+    }
+
+    .roadmapBoxImg {
+        top: 0;
+        left: 0;
+    }
+
+    .roadmapList {
+        height: 630px;
+    }
+
+    .roadmapItem {
+        width: 165px;
+        padding: 10px 20px 20px;
+    }
+
+    .roadmapItem:nth-child(1) {
+        top: 0;
+        left: 170px;
+    }
+
+    .roadmapItem:nth-child(1) .roadmapItemArrow {
+        bottom: 125px;
+    }
+
+    .roadmapItem:nth-child(2) {
+        top: 185px;
+        left: 185px;
+    }
+
+    .roadmapItem:nth-child(2) .roadmapItemArrow {
+        bottom: 80px;
+    }
+
+    .roadmapItem:nth-child(3) {
+        top: 375px;
+        left: 140px;
+    }
+
+    .roadmapItem:nth-child(3) .roadmapItemArrow {
+        bottom: 45px;
+    }
+
+    .roadmapItem:nth-child(4) {
+        top: 520px;
+        left: 65px;
+    }
+
+    .roadmapItem:nth-child(4) .roadmapItemArrow {
+        left: auto;
+        right: -20px;
+        bottom: 50px;
+        transform: rotate(-90deg);
+    }
+
+    .roadmapItemTitle {
+        font-size: 10px;
+    }
+
+    .roadmapItemDescription {
+        margin-top: 10px;
+        font-size: 8px;
+    }
+
+    .roadmapItemDescription ul + ul {
+        margin-top: 5px;
+    }
+
+    .roadmapItemDescription ul ul {
+        padding-left: 10px;
+    }
+
+    .roadmapItemArrow {
+        transform: rotate(90deg);
+        height: 11px;
+        width: 20px;
+        left: -20px;
+    }
+}

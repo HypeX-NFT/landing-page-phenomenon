@@ -1,0 +1,42 @@
+.socials {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.socialsItem:not(.socialsItem:last-child) {
+    margin-bottom: 3em;
+}
+
+.socialsItemLink {
+    display: block;
+    width: 3em;
+    height: 3em;
+}
+
+.socialsItemLink svg {
+    fill: var(--color-primary);
+    transition: fill 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+.socialsItemLink:focus {
+    outline: none;
+}
+
+.socialsItemLink:hover svg,
+.socialsItemLink:focus svg {
+    fill: var(--color-purple-200);
+}
+
+@media (max-width: 767px) {
+    .socialsItem:not(.socialsItem:last-child) {
+        margin-bottom: 2em;
+    }
+
+    .socialsItemLink {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}

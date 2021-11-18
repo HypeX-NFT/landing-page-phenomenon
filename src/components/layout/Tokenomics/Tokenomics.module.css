@@ -1,0 +1,49 @@
+.tokenomics {
+    padding-top: 200px;
+}
+
+.title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoImg {
+    width: 100%;
+    max-width: 1290px;
+    max-height: 830px;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .tokenomics {
+        padding-top: 120px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .info {
+        margin-top: 35px;
+    }
+
+    .infoImg {
+        max-width: 450px;
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 479px) {
+    .title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,71 @@
+.banner {
+    padding: 40px 0;
+    background-color: var(--color-purple-400);
+    background-image: url("../../../assets/images/HYPEX-text.png");
+    background-image: image-set(url("../../../assets/images/HYPEX-text.webp"));
+    background-size: cover;
+    background-position: center;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.bannerInner {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bannerTitle {
+    font-size: 36px;
+    line-height: 1.3em;
+}
+
+.bannerLink {
+    margin: 5px 0;
+    display: block;
+}
+
+.bannerLink img {
+    width: 100%;
+    max-width: 550px;
+    max-height: 130px;
+    object-fit: contain;
+}
+
+.bannerEventDate {
+    font-size: 48px;
+    line-height: 1.3em;
+    color: var(--color-pink-200);
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 20px 0;
+    }
+
+    .bannerTitle {
+        font-size: 26px;
+    }
+
+    .bannerLink img {
+        max-height: 80px;
+    }
+
+    .bannerEventDate {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 479px) {
+    .bannerTitle {
+        font-size: 16px;
+    }
+
+    .bannerLink img {
+        max-height: 40px;
+    }
+
+    .bannerEventDate {
+        font-size: 18px;
+    }
+}

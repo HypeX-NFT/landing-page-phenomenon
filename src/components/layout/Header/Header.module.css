@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.headerLogo {
+    width: 50px;
+    height: 70px;
+    transition: opacity 0.2s;
+}
+
+.headerLogoHide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.headerLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .headerInner {
+        position: relative;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .headerLogo {
+        width: 35px;
+        height: 45px;
+    }
+}
