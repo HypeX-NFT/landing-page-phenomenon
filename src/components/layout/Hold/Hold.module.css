@@ -49,7 +49,7 @@
 }
 
 .holdItem {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.3em;
 }
 
@@ -57,7 +57,45 @@
     margin-bottom: 30px;
 }
 
+.holdBlock {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.holdBlockLeft{
+    width: 50%;
+    order: 1;
+}
+
+.holdBlockRight{
+    margin: auto auto auto 50px;
+    width: 50%;
+    order: 2;
+}
+
 @media (max-width: 767px) {
+    .holdBlock {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .holdBlockLeft{
+        width: 90%;
+        order: 1;
+    }
+    
+    .holdBlockRight{
+        margin: auto;
+        width: 90%;
+        order: 2;
+    }
+
     .holdInner::before {
         font-size: 7px;
         top: 385px;

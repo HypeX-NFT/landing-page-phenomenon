@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import classes from './Hold.module.css';
-import videoMp4 from '@videos/why-hold-hypex.mp4';
+import videoMov from '@videos/box1080.mov';
 
 const Hold = () => {
     return (
@@ -11,35 +11,43 @@ const Hold = () => {
                     <h2 className={clsx(classes.holdTitle, 'text-center')}>
                         Why hold <span className="color-text-primary">$HYPEX?</span>
                     </h2>
-                    <div className={clsx(classes.holdVideoWrap, 'text-center')}>
-                        <video autoPlay muted loop playsInline>
-                            <source src={videoMp4} type="video/mp4" />
-                        </video>
-                    </div>
-                    <ul className={classes.holdList}>
-                        <li className={classes.holdItem}>
-                            <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>1. Discounts</h4>
-                            <p>Get discounts when you shop sneakers on HypeX.</p>
-                        </li>
-                        <li className={classes.holdItem}>
-                            <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>2. Free Sneaker</h4>
-                            <p>Eligible for getting monthly free sneaker NFTs and/or mystery boxes.</p>
-                        </li>
-                        <li className={classes.holdItem}>
-                            <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>3. Dao</h4>
-                            <p>
+                    <div className={classes.holdBlock}>
+                        <div className={classes.holdBlockLeft}>
+                            <div className={clsx(classes.holdVideoWrap, 'text-center')}>
+                                <video autoPlay muted loop playsInline>
+                                    <source src={videoMov} type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <div className={classes.holdBlockRight}>
+                            <ul className={classes.holdList}>
+                                <li className={classes.holdItem}>
+                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>1. Discounts</h4>
+                                    <p>Get discounts when you shop sneakers on HypeX.</p>
+                                </li>
+                                <li className={classes.holdItem}>
+                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>2. Free Sneaker</h4>
+                                    <p>Eligible for getting monthly free sneaker NFTs and/or mystery boxes.</p>
+                                </li>
+                                <li className={classes.holdItem}>
+                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>3. Dao</h4>
+                                    <p>
                                 Participate in DAO where you can vote on HypeX’s future regarding merchandise selection,
                                 event hosting, and new features.
-                            </p>
-                        </li>
-                        <li className={classes.holdItem}>
-                            <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>3. Event</h4>
-                            <p>
+                                    </p>
+                                </li>
+                                <li className={classes.holdItem}>
+                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>3. Event</h4>
+                                    <p>
                                 Participate in offline events hosted by HypeX. These events can vary from concerts to
                                 parties for sneaker lovers.
-                            </p>
-                        </li>
-                    </ul>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
             </Container>
         </section>
