@@ -56,8 +56,6 @@ const Roadmap = forwardRef((_, ref) => {
                                             <li>- NFT Forge (Redeem)</li>
                                         </ul>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li>
                                         · HypeX Web Card Game <span className="color-text-primary">Alpha/Beta</span>{' '}
                                         Release:
@@ -66,10 +64,10 @@ const Roadmap = forwardRef((_, ref) => {
                                             <li>- NFT Morph</li>
                                         </ul>
                                     </li>
-                                    <li>- $HYPEX token contract</li>
+                                    <li>· $HYPEX token contract</li>
                                     <ul>
-                                        <li>· Contract Audits</li>
-                                        <li>· HYPEX <span className="color-text-primary">IDO/ICO</span> </li>
+                                        <li>- Contract Audits</li>
+                                        <li>- HYPEX <span className="color-text-primary">IDO/ICO</span> </li>
                                     </ul>
                                 </ul>
                             </div>
