@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import AppContext from '@context/AppContext';
 import Header from '@components/layout/Header/Header';
 import Hero from '@components/layout/Hero/Hero';
@@ -26,16 +26,29 @@ const Landing = () => {
 
     const [shouldShowHeader, setShouldShowHeader] = useState(true);
 
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            setShouldShowHeader(true);
-        } else {
-            setShouldShowHeader(false);
-        }
-        prevScrollpos = currentScrollPos;
-    };
+    const [y, setY] = useState(window.scrollY);
+
+    const handleNavigation = useCallback(
+        e => {
+            const window = e.currentTarget;
+            if (y > window.scrollY) {
+                setShouldShowHeader(true);
+            } else if (y < window.scrollY) {
+                setShouldShowHeader(false);
+            }
+            setY(window.scrollY);
+        }, [y]
+    );
+
+    useEffect(() => {
+        setY(window.scrollY);
+        window.addEventListener('scroll', handleNavigation);
+        return () => {
+            window.removeEventListener('scroll', handleNavigation);
+        };
+
+
+    }, [handleNavigation]);
 
     return (
         <AppContext.Provider

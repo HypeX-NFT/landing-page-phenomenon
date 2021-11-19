@@ -16,12 +16,6 @@
 .headerLogo {
     width: 40px;
     height: 56px;
-    transition: opacity 0.2s;
-}
-
-.headerLogoHide {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .headerLogo img {
