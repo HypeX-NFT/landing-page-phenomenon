@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState, useCallback } from 'react';
 import clsx from 'clsx';
 import { MAX_SCROLL_Y_POSITION_LOGO } from '@constants';
@@ -23,11 +24,18 @@ const Header = () => {
         }
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <header className={classes.header}>
             <Container>
                 <div className={classes.headerInner}>
-                    <a href="/" className={clsx(classes.headerLogo, logoAdditionalClass)}>
+                    <a onClick={scrollToTop} className={clsx(classes.headerLogo, logoAdditionalClass)}>
                         <img src={logo} alt="logo" />
                     </a>
                     <Menu toggleLogo={toggleLogo} />

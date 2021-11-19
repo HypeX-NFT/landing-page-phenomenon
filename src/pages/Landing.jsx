@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import AppContext from '@context/AppContext';
 import Header from '@components/layout/Header/Header';
 import Hero from '@components/layout/Hero/Hero';
@@ -24,13 +24,26 @@ const Landing = () => {
         partnersSectionRef,
     ]);
 
+    const [shouldShowHeader, setShouldShowHeader] = useState(true);
+
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            setShouldShowHeader(true);
+        } else {
+            setShouldShowHeader(false);
+        }
+        prevScrollpos = currentScrollPos;
+    };
+
     return (
         <AppContext.Provider
             value={{
                 sectionsRefs,
             }}
         >
-            <Header />
+            {shouldShowHeader ? <Header /> : null}
             <Hero />
             <Whitemap ref={whitemapSectionRef} />
             <Benefits ref={benefitsSectionRef} />
