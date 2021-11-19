@@ -195,6 +195,7 @@
     .heroSubtitle {
         font-size: 2.5vw;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -212,11 +213,13 @@
         left: auto;
         right: 3%;
         font-size: 7px;
+        animation: var(--animation1) 8s linear alternate infinite;
     }
 
     .heroInner::after {
         bottom: 5%;
         font-size: 9px;
+        animation: var(--animation2) 12s linear alternate infinite;
     }
 
     .heroSocials {
