@@ -106,8 +106,8 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: translate3d(var(--tx-hero-img), var(--ty-hero-img), 0);
-    transition: var(--transition-move);
+    /* transform: translate3d(var(--tx-hero-img), var(--ty-hero-img), 0);
+    transition: var(--transition-move); */
 }
 
 .heroTitle {
@@ -195,6 +195,7 @@
     .heroSubtitle {
         font-size: 2.5vw;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -212,11 +213,13 @@
         left: auto;
         right: 3%;
         font-size: 7px;
+        animation: var(--animation1) 8s linear alternate infinite;
     }
 
     .heroInner::after {
         bottom: 5%;
         font-size: 9px;
+        animation: var(--animation2) 12s linear alternate infinite;
     }
 
     .heroSocials {
