@@ -72,7 +72,7 @@
 .whitemapCards {
     font-size: 10px;
     position: relative;
-    top: 5em;
+    top: 15em;
     min-width: 56.5em;
     height: 100%;
 }
@@ -87,8 +87,8 @@
 
 .whitemapCard img {
     width: 90%;
-    max-width: 38.5em;
-    max-height: 54em;
+    max-width: 36em;
+    max-height: 38em;
     object-fit: contain;
 }
 

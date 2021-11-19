@@ -35,7 +35,7 @@
 .bannerEventDate {
     font-size: 48px;
     line-height: 1.3em;
-    color: var(--color-pink-200);
+    color: var(--color-white-200);
 }
 
 @media (max-width: 767px) {
