@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import classes from './Hold.module.css';
-import videoMov from '@videos/box1080.mov';
+import videoMov from '@videos/box-full.mov';
 
 const Hold = () => {
     return (
