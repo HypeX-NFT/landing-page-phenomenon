@@ -14,6 +14,9 @@ import member5Png from '@images/member5.png';
 import member5Webp from '@images/member5.webp';
 
 const Team = forwardRef((_, ref) => {
+    const redirect = (link) => {
+        window.location = link;
+    };
     return (
         <section id="team" className={classes.team} ref={ref}>
             <Container>
@@ -24,7 +27,9 @@ const Team = forwardRef((_, ref) => {
                             <li className={classes.teamCard}>
                                 <picture>
                                     <source srcSet={member1Webp} type="image/webp" />
-                                    <img className={classes.teamPhotoMember} src={member1Jpg} alt="Stark" />
+                                    <img className={classes.teamPhotoMemberClickable} src={member1Jpg} alt="Stark" onClick={()=>{
+                                        redirect('https://www.linkedin.com/in/mingchenzhang');
+                                    }} />
                                 </picture>
                                 <div className={classes.teamMemberFullName}>Stark Zhang</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CEO</div>
@@ -36,7 +41,9 @@ const Team = forwardRef((_, ref) => {
                             <li className={classes.teamCard}>
                                 <picture>
                                     <source srcSet={member2Webp} type="image/webp" />
-                                    <img className={classes.teamPhotoMember} src={member2Jpg} alt="Ian" />
+                                    <img className={classes.teamPhotoMemberClickable} src={member2Jpg} alt="Ian" onClick={()=>{
+                                        redirect('https://www.linkedin.com/in/yuecheng-wang');
+                                    }} />
                                 </picture>
                                 <div className={classes.teamMemberFullName}>Ian Wang</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CMO</div>
@@ -47,7 +54,9 @@ const Team = forwardRef((_, ref) => {
                             <li className={classes.teamCard}>
                                 <picture>
                                     <source srcSet={member3Webp} type="image/webp" />
-                                    <img className={classes.teamPhotoMember} src={member3Jpg} alt="Xin" />
+                                    <img className={classes.teamPhotoMemberClickable} src={member3Jpg} alt="Xin" onClick={()=>{
+                                        redirect('https://www.linkedin.com/in/xinhan');
+                                    }} />
                                 </picture>
                                 <div className={classes.teamMemberFullName}>Xin Han</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CTO</div>

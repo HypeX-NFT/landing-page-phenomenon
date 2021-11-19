@@ -74,6 +74,14 @@
     object-fit: cover;
 }
 
+.teamPhotoMemberClickable {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
 .teamMemberFullName {
     margin-top: 20px;
     font-family: var(--third-font);
