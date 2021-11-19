@@ -45,39 +45,24 @@ const Whitemap = forwardRef((_, ref) => {
                         <div className={classes.whitemapBlock}>
                             <div className={classes.whitemapMediaWrap}>
                                 <div className={classes.whitemapCards}>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={classes.whitemapCard}
-                                    >
+                                    <div className={classes.whitemapCard} >
                                         <picture>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
                                         </picture>
-                                    </a>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={classes.whitemapCard}
-                                    >
+                                    </div>
+                                    <div className={classes.whitemapCard} >
                                         <picture>
                                             <source srcSet={travisImgWebp} type="image/webp" />
                                             <img src={travisImgPng} alt="travis sneakers" />
                                         </picture>
-                                    </a>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={classes.whitemapCard}
-                                    >
+                                    </div>
+                                    <div className={classes.whitemapCard} >
                                         <picture>
                                             <source srcSet={airMagImgWebp} type="image/webp" />
                                             <img src={airMagImgPng} alt="airMag sneakers" />
                                         </picture>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div className={classes.whitemapTextContent}>
