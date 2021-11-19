@@ -48,105 +48,128 @@ const partners = [
         srcPng: logo1Png,
         srcWebp: logo1Webp,
         alt: 'Logo',
+        link: 'https://polygon.technology/',
     },
     {
         srcPng: logo2Png,
         srcWebp: logo2Webp,
         alt: 'Logo',
+        link: 'https://www.skyvisioncapital.com/',
     },
     {
         srcPng: logo3Png,
         srcWebp: logo3Webp,
         alt: 'Logo',
+        link: 'https://www.jumptrading.com/',
     },
     {
         srcPng: logo4Png,
         srcWebp: logo4Webp,
         alt: 'Logo',
+        link: 'https://www.incuba.capital/',
     },
     {
         srcPng: logo5Png,
         srcWebp: logo5Webp,
         alt: 'Logo',
+        link: 'https://www.zonff.partners/#/home',
     },
     {
         srcPng: logo6Png,
         srcWebp: logo6Webp,
         alt: 'Logo',
+        link: 'https://au21.capital/',
     },
     {
         srcPng: logo7Png,
         srcWebp: logo7Webp,
         alt: 'Logo',
+        link: 'http://www.7xvc.com/',
     },
     {
         srcPng: logo8Png,
         srcWebp: logo8Webp,
         alt: 'Logo',
+        link: 'https://grizzly.capital/',
     },
     {
         srcPng: logo9Png,
         srcWebp: logo9Webp,
         alt: 'Logo',
+        link: 'https://www.basics.vip/',
     },
     {
         srcPng: logo10Png,
         srcWebp: logo10Webp,
         alt: 'Logo',
+        link: 'https://capital-chain.com/',
     },
     {
         srcPng: logo11Png,
         srcWebp: logo11Webp,
         alt: 'Logo',
+        link: 'https://www.faculty.group/',
     },
     {
         srcPng: logo12Png,
         srcWebp: logo12Webp,
         alt: 'Logo',
+        link: 'https://www.newtribe.capital/',
     },
     {
         srcPng: logo13Png,
         srcWebp: logo13Webp,
         alt: 'Logo',
+        link: 'https://ghafcapital.ae/',
     },
     {
         srcPng: logo14Png,
         srcWebp: logo14Webp,
         alt: 'Logo',
+        link: 'https://www.mexc.com/',
     },
     {
         srcPng: logo15Png,
         srcWebp: logo15Webp,
         alt: 'Logo',
+        link: 'https://formation.fi/',
     },
     {
         srcPng: logo16Png,
         srcWebp: logo16Webp,
         alt: 'Logo',
+        link: 'https://www.complex.com/',
     },
     {
         srcPng: logo17Png,
         srcWebp: logo17Webp,
         alt: 'Logo',
+        link: 'https://sneakercon.com/',
     },
     {
         srcPng: logo18Png,
         srcWebp: logo18Webp,
         alt: 'Logo',
+        link: 'https://www.solestage.com/',
     },
     {
         srcPng: logo19Png,
         srcWebp: logo19Webp,
         alt: 'Logo',
+        link: 'https://supbrousa.com/',
     },
     {
         srcPng: logo20Png,
         srcWebp: logo20Webp,
         alt: 'Logo',
+        link: 'https://www.hingwaleejewelers.com/',
     },
 ];
 
 const Partners = forwardRef((_, ref) => {
+    const redirect = (link) => {
+        window.location = link;
+    };
     return (
         <section id="partners" className={classes.partners} ref={ref}>
             <Container>
@@ -157,7 +180,9 @@ const Partners = forwardRef((_, ref) => {
                             <div className={classes.partnersItemInner}>
                                 <picture>
                                     <source srcSet={partner.srcWebp} type="image/webp" />
-                                    <img src={partner.srcPng} alt={partner.alt} />
+                                    <img src={partner.srcPng} alt={partner.alt} onClick={()=>{
+                                        redirect(partner.link);
+                                    }}/>
                                 </picture>
                             </div>
                         </li>
