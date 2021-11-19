@@ -8,7 +8,7 @@
 .benefitsTitle {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.3em;
     text-transform: uppercase;
 }
@@ -92,7 +92,7 @@
 
 .benefitsMedia img {
     max-width: 100%;
-    max-height: 435px;
+    max-height: 370px;
     object-fit: contain;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .benefitsText {
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.3em;
 }
 

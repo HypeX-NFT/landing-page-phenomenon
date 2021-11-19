@@ -60,7 +60,7 @@ const partners = [
         srcPng: logo3Png,
         srcWebp: logo3Webp,
         alt: 'Logo',
-        link: 'https://www.jumptrading.com/',
+        link: 'https://polkastarter.com/',
     },
     {
         srcPng: logo4Png,
@@ -90,7 +90,7 @@ const partners = [
         srcPng: logo8Png,
         srcWebp: logo8Webp,
         alt: 'Logo',
-        link: 'https://grizzly.capital/',
+        link: 'http://ldcap.com/',
     },
     {
         srcPng: logo9Png,
@@ -102,7 +102,7 @@ const partners = [
         srcPng: logo10Png,
         srcWebp: logo10Webp,
         alt: 'Logo',
-        link: 'https://capital-chain.com/',
+        link: 'https://magnusdigitalassets.com/',
     },
     {
         srcPng: logo11Png,
@@ -126,7 +126,7 @@ const partners = [
         srcPng: logo14Png,
         srcWebp: logo14Webp,
         alt: 'Logo',
-        link: 'https://www.mexc.com/',
+        link: 'https://www.dcentralcon.com/',
     },
     {
         srcPng: logo15Png,
@@ -150,7 +150,7 @@ const partners = [
         srcPng: logo18Png,
         srcWebp: logo18Webp,
         alt: 'Logo',
-        link: 'https://www.solestage.com/',
+        link: 'https://www.nicekicks.com/',
     },
     {
         srcPng: logo19Png,
