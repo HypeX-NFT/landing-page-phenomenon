@@ -57,12 +57,13 @@
     align-items: center;
     justify-content: center;
     min-height: 110px;
+    cursor: pointer;
 }
 
 .partnersItem img {
     width: 100%;
     max-width: 160px;
-    max-height: 70px;
+    max-height: 80px;
     object-fit: contain;
 }
 

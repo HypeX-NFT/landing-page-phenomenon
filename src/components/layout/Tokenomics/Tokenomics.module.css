@@ -17,10 +17,12 @@
 }
 
 .infoImg {
-    width: 100%;
+    width: 85%;
     max-width: 1290px;
     max-height: 830px;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 @media (max-width: 767px) {

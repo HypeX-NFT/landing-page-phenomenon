@@ -6,7 +6,7 @@ import { useMediaQuery, useToggle, useDocumentLockScrollY } from '@hooks';
 import classes from './Menu.module.css';
 
 const menuItems = [
-    { href: '#whitemap', text: 'Whitemap' },
+    { href: 'https://docs.hypex.us/', text: 'Whitemap' },
     { href: '#benefits', text: 'Benefits' },
     { href: '#roadmap', text: 'Roadmap' },
     { href: '#team', text: 'Team' },
@@ -21,6 +21,10 @@ const Menu = props => {
     const [isActiveMenu, toggleIsActiveMenu] = useToggle();
     const [activeNavHash, setActiveNavHash] = useState('');
     const { lockScrollY, unlockScrollY } = useDocumentLockScrollY();
+
+    const redirect = (link) => {
+        window.location = link;
+    };
 
     useEffect(() => {
         if (hasMobileMenu) {
@@ -106,19 +110,35 @@ const Menu = props => {
             <nav className={clsx(classes.menu, menuTransitionClass, isActiveMenu && classes.menuActive)}>
                 <ul className={classes.menuList}>
                     {menuItems.map(item => {
-                        const activeClass = activeNavHash === item.href && classes.menuItemLinkActive;
+                        if(item.text === 'Whitemap') {
+                            return (
+                                <li key={item.href} className={classes.menuItem}>
+                                    <a
+                                        href={item.href}
+                                        className={clsx(classes.menuItemLink)}
+                                        onClick={() => {
+                                            redirect(item.href);
+                                        }}
+                                    >
+                                        {item.text}
+                                    </a>
+                                </li>
+                            );
+                        } else {
+                            const activeClass = activeNavHash === item.href && classes.menuItemLinkActive;
+                            return (
+                                <li key={item.href} className={classes.menuItem}>
+                                    <a
+                                        href={item.href}
+                                        className={clsx(classes.menuItemLink, activeClass)}
+                                        onClick={clickNavLinkHandler}
+                                    >
+                                        {item.text}
+                                    </a>
+                                </li>
+                            );
+                        }
 
-                        return (
-                            <li key={item.href} className={classes.menuItem}>
-                                <a
-                                    href={item.href}
-                                    className={clsx(classes.menuItemLink, activeClass)}
-                                    onClick={clickNavLinkHandler}
-                                >
-                                    {item.text}
-                                </a>
-                            </li>
-                        );
                     })}
                 </ul>
             </nav>
