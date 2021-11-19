@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import classes from './Benefits.module.css';
-import sneakerInfoJpg from '@images/sneaker-info.jpg';
+import sneakerInfoPng from '@images/sneaker-info.png';
 import sneakerInfoWebp from '@images/sneaker-info.webp';
 import appleWatchPng from '@images/apple-watch.png';
 import appleWatchWebp from '@images/apple-watch.webp';
@@ -22,7 +22,7 @@ const Benefits = forwardRef((_, ref) => {
                             <div className={clsx(classes.benefitsMedia, 'text-center')}>
                                 <picture>
                                     <source srcSet={sneakerInfoWebp} type="image/webp" />
-                                    <img src={sneakerInfoJpg} alt="sneaker info" />
+                                    <img src={sneakerInfoPng} alt="sneaker info" />
                                 </picture>
                             </div>
                             <div className={classes.benefitsTextContent}>
