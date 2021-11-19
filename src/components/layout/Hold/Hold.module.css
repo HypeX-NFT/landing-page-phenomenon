@@ -48,6 +48,10 @@
     margin-top: 50px;
 }
 
+.holdItemTitle {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
 .holdItem {
     font-size: 18px;
     line-height: 1.3em;
@@ -77,6 +81,10 @@
 }
 
 @media (max-width: 767px) {
+    .hold {
+        padding-top: 45px;
+    }
+
     .holdBlock {
         position: relative;
         z-index: 1;
@@ -92,7 +100,7 @@
     
     .holdBlockRight{
         margin: auto;
-        width: 90%;
+        width: 100%;
         order: 2;
     }
 
@@ -125,8 +133,8 @@
         height: 360px;
     }
 
-    .holdVideoWrap img {
-        height: 100%;
+    .holdVideoWrap video {
+        width: 85%;
         object-fit: cover;
     }
 
@@ -134,6 +142,11 @@
         font-size: 18px;
         width: 85%;
         margin: 0 auto;
+    }
+
+    .holdItemTitle {
+        font-size: 19px;
+        margin-bottom: 5px;
     }
 }
 
@@ -143,7 +156,7 @@
     }
 
     .holdItem {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .holdItem:not(:last-child) {

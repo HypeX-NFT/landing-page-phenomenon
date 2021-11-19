@@ -61,7 +61,7 @@
 
 html {
     background-color: var(--color-purple-500);
-    background-image: url("../images/page-bg.jpg");
+    background-image: url("../images/BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

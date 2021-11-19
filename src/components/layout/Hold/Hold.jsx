@@ -37,7 +37,7 @@ const Hold = () => {
                                     </p>
                                 </li>
                                 <li className={classes.holdItem}>
-                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>3. Event</h4>
+                                    <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>4. Event</h4>
                                     <p>
                                 Participate in offline events hosted by HypeX. These events can vary from concerts to
                                 parties for sneaker lovers.

@@ -162,7 +162,7 @@ const partners = [
         srcPng: logo20Png,
         srcWebp: logo20Webp,
         alt: 'Logo',
-        link: 'https://www.hingwaleejewelers.com/',
+        link: 'https://www.kinjaz.com/',
     },
 ];
 

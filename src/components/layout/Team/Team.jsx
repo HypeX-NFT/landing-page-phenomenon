@@ -36,8 +36,16 @@ const Team = forwardRef((_, ref) => {
                                 <div className={classes.teamMemberFullName}>Stark Zhang</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CEO</div>
                                 <p className={classes.teamMemberExperience}>
-                                    USC &#38; CMU Computer Science Serial Entrepreneur Smart Contract Engineer Sneaker
-                                    Expert
+                                    USC &#38; CMU Computer Science
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Serial Entrepreneur
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Smart Contract Engineer
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Sneaker Expert
                                 </p>
                             </li>
                             <li className={classes.teamCard}>
@@ -50,7 +58,13 @@ const Team = forwardRef((_, ref) => {
                                 <div className={classes.teamMemberFullName}>Ian Wang</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CMO</div>
                                 <p className={classes.teamMemberExperience}>
-                                    USC CommunIcation Sneaker Influencer 3+ years Tiktok Strategist
+                                    USC CommunIcation
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Sneaker Influencer
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    3+ years Tiktok Strategist
                                 </p>
                             </li>
                             <li className={classes.teamCard}>
@@ -63,8 +77,19 @@ const Team = forwardRef((_, ref) => {
                                 <div className={classes.teamMemberFullName}>Xin Han</div>
                                 <div className={classes.teamMemberPosition}>CO-FOUNDER &#38; CTO</div>
                                 <p className={classes.teamMemberExperience}>
-                                    TSInghua University CS PHD UC Berkeley MBA Sr. PM at Amazon &#38; eBay Sr. Software
-                                    Engineer at CIENA Founder at VIPShop Research Center &#38; Dmall.com &#38; Jian24
+                                    TSInghua University CS PHD
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    UC Berkeley MBA
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Sr. PM at Amazon &#38; eBay
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Sr. Software Engineer at CIENA
+                                </p>
+                                <p className={classes.teamMemberExperience}>
+                                    Founder at VIPShop Research Center &#38; Dmall.com &#38; Jian24
                                 </p>
                             </li>
                             <li className={classes.teamCard}>

@@ -6,11 +6,11 @@ import { useMediaQuery, useToggle, useDocumentLockScrollY } from '@hooks';
 import classes from './Menu.module.css';
 
 const menuItems = [
-    { href: 'https://docs.hypex.us/', text: 'Whitemap' },
-    { href: '#benefits', text: 'Benefits' },
-    { href: '#roadmap', text: 'Roadmap' },
-    { href: '#team', text: 'Team' },
-    { href: '#partners', text: 'Partners' },
+    { href: 'https://docs.hypex.us/', text: 'WHITEPAPER' },
+    { href: '#benefits', text: 'BENEFITS' },
+    { href: '#roadmap', text: 'ROADMAP' },
+    { href: '#team', text: 'TEAM' },
+    { href: '#partners', text: 'PARTNERS' },
 ];
 
 const Menu = props => {

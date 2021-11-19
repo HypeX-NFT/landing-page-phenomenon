@@ -51,15 +51,9 @@ const Roadmap = forwardRef((_, ref) => {
                             <div className={classes.roadmapItemDescription}>
                                 <ul>
                                     <li>
-                                        · HypeX Web App <span className="color-text-primary">Alpha/Beta</span> Release:
+                                        · HypeX Web App <span className="color-text-primary">Alpha/Beta </span> Release:
                                         <ul>
                                             <li>- NFT Forge (Redeem)</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        · HypeX Web Card Game <span className="color-text-primary">Alpha/Beta</span>{' '}
-                                        Release:
-                                        <ul>
                                             <li>- Fragment Refiner</li>
                                             <li>- NFT Morph</li>
                                         </ul>
