@@ -70,9 +70,9 @@ const Whitemap = forwardRef((_, ref) => {
                                     <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
                                 </h3>
                                 <div className={classes.whitemapText}>
-                                    <p>Want to own a pair of the 2011 Nike Mags?</p>
+                                    <p>Want to own a pair of 2011 Nike Mag?</p>
                                     <p>
-                                        HYPEX offers <span className="color-text-primary">fractionalized NFTs</span> of
+                                        HypeX offers <span className="color-text-primary">fractionalized NFTs</span> of
                                         physical sneakers.
                                     </p>
                                     <p>

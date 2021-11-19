@@ -13,6 +13,7 @@
     font-size: 22px;
     text-transform: uppercase;
     transition: color 0.2s;
+    letter-spacing: 1px;
 }
 
 .menuItemLink:hover,

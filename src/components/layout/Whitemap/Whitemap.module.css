@@ -125,8 +125,13 @@
 
 @media (max-width: 1199px) {
     .whitemapVideo{
-        width: 90%;
-        height: 90%;
+        width: 72%;
+        height: 72%;
+    }
+
+    .whitemapCard img {
+        width: 72%;
+        height: 72%;
     }
 
     .whitemap {
@@ -191,7 +196,7 @@
     }
 
     .whitemapBlock:not(:last-child) {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .whitemapBlock:nth-child(2)::before {
@@ -227,7 +232,7 @@
     }
 
     .whitemapText {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .whitemapText p {
