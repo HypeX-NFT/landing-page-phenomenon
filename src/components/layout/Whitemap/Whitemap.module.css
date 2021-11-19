@@ -85,11 +85,11 @@
 }
 
 .whitemapCard:nth-child(odd) {
-    text-align: right;
+    /* text-align: right; */
 }
 
 .whitemapCard img {
-    width: 100%;
+    width: 90%;
     max-width: 38.5em;
     max-height: 54em;
     object-fit: contain;
