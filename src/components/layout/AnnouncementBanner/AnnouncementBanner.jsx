@@ -10,7 +10,7 @@ const AnnouncementBanner = () => {
             <Container>
                 <div className={classes.bannerInner}>
                     <h2 className={classes.bannerTitle}>
-                        $HYPEX IDO <span className="d-block">in</span>
+                        $HYPEX IDO
                     </h2>
                     <a href="/" target="_blank" rel="noopener noreferrer" className={classes.bannerLink}>
                     </a>
