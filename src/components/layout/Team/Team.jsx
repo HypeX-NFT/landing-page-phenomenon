@@ -2,16 +2,18 @@ import { forwardRef } from 'react';
 import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import classes from './Team.module.css';
-import member1Jpg from '@images/member1.jpg';
+import member1Jpg from '@images/member1.png';
 import member1Webp from '@images/member1.webp';
-import member2Jpg from '@images/member2.jpg';
+import member2Jpg from '@images/member2.png';
 import member2Webp from '@images/member2.webp';
-import member3Jpg from '@images/member3.jpg';
+import member3Jpg from '@images/member3.png';
 import member3Webp from '@images/member3.webp';
-import member4Jpg from '@images/member4.jpg';
+import member4Jpg from '@images/member4.png';
 import member4Webp from '@images/member4.webp';
 import member5Png from '@images/member5.png';
 import member5Webp from '@images/member5.webp';
+import member6Png from '@images/member6.png';
+import member6Webp from '@images/member6.webp';
 
 const Team = forwardRef((_, ref) => {
     const redirect = (link) => {
@@ -75,8 +77,8 @@ const Team = forwardRef((_, ref) => {
                             </li>
                             <li className={classes.teamCard}>
                                 <picture>
-                                    <source srcSet={member5Webp} type="image/webp" />
-                                    <img className={classes.teamPhotoMember} src={member5Png} alt="Arpit A." />
+                                    <source srcSet={member6Webp} type="image/webp" />
+                                    <img className={classes.teamPhotoMember} src={member6Png} alt="Arpit A." />
                                 </picture>
                                 <div className={classes.teamMemberFullName}>Arpit A.</div>
                                 <div className={classes.teamMemberPosition}>DESIGN LEAD</div>
