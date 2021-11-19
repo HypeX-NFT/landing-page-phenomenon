@@ -106,8 +106,8 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: translate3d(var(--tx-hero-img), var(--ty-hero-img), 0);
-    transition: var(--transition-move);
+    /* transform: translate3d(var(--tx-hero-img), var(--ty-hero-img), 0);
+    transition: var(--transition-move); */
 }
 
 .heroTitle {
