@@ -30,13 +30,8 @@ const Landing = () => {
 
     const handleNavigation = useCallback(
         e => {
-            const window = e.currentTarget;
-            if (y > window.scrollY) {
-                setShouldShowHeader(true);
-            } else if (y < window.scrollY) {
-                setShouldShowHeader(false);
-            }
             setY(window.scrollY);
+            setShouldShowHeader(y < 25);
         }, [y]
     );
 
