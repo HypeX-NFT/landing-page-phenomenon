@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import Container from '@components/layout/Container/Container';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
-import stubImg from '@images/3dCard.gif';
+import stubImg from '@images/card.gif';
 import airMagImgPng from '@images/AirMAg.png';
 import airMagImgWebp from '@images/AirMAg.webp';
 import travisImgPng from '@images/Travis.png';
