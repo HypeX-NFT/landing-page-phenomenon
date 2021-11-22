@@ -219,17 +219,14 @@
     }
 
     .whitemapCard:first-child {
-        top: 0;
         right: 0;
     }
     
     .whitemapCard:nth-child(2) {
-        top: 0;
         right: 8em;
     }
     
     .whitemapCard:nth-child(3) {
-        top: 0;
         right: 16em;
     }
 
