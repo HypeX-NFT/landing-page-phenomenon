@@ -191,6 +191,7 @@
     }
 
     .whitemapTextContent {
+        margin-left: 0;
         width: 85%;
         max-width: 620px;
     }
