@@ -214,21 +214,21 @@
 
     .whitemapCard:first-child {
         top: 0;
-        left: 14em;
+        right: 0;
     }
     
     .whitemapCard:nth-child(2) {
         top: 0;
-        left: 0em;
+        right: 8em;
     }
     
     .whitemapCard:nth-child(3) {
         top: 0;
-        left: -8em;
+        right: 16em;
     }
 
     .whitemap {
-        padding: 85px 0;
+        padding: 10px 0;
     }
 
     .whitemapBlock:not(:last-child) {
