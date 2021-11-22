@@ -87,17 +87,17 @@
 }
 
 .benefitsMedia {
-    width: 50%;
+    width: 55%;
 }
 
 .benefitsMedia img {
     max-width: 100%;
-    max-height: 370px;
+    max-height: 400px;
     object-fit: contain;
 }
 
 .benefitsTextContent {
-    width: 50%;
+    width: 45%;
     max-width: 450px;
     margin-left: 40px;
 }
