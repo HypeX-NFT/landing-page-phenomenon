@@ -154,6 +154,10 @@
 }
 
 @media (max-width: 991px) {
+    .whitemapBlock:nth-child(even) .whitemapMediaWrap {
+        margin-left: 0;
+    }
+    
     .whitemapInner::before {
         top: -3%;
         font-size: 5px;
@@ -193,9 +197,6 @@
 }
 
 @media (max-width: 767px) {
-    .whitemapBlock:nth-child(even) .whitemapMediaWrap {
-        margin-left: 0;
-    }
     
     .whitemapMediaWrap {
         margin-bottom: 5px;
@@ -213,17 +214,17 @@
 
     .whitemapCard:first-child {
         top: 0;
-        left: 18em;
+        left: 15em;
     }
     
     .whitemapCard:nth-child(2) {
         top: 0;
-        left: 9em;
+        left: 0em;
     }
     
     .whitemapCard:nth-child(3) {
         top: 0;
-        left: 0;
+        left: -8em;
     }
 
     .whitemap {
