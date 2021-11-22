@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
@@ -65,7 +66,7 @@ const Whitemap = forwardRef((_, ref) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={classes.whitemapTextContent}>
+                            <div className={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
                                 <h3 className={classes.whitemapTitle}>
                                     <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
                                 </h3>
