@@ -83,7 +83,6 @@ const Menu = props => {
 
     const clickNavLinkHandler = e => {
         e.preventDefault();
-        console.log(e);
         const id = e.target.getAttribute('href').replace(/^#/, '');
         const $section = sectionsRefs.current.find(sectionRef => sectionRef.current.id === id);
 
