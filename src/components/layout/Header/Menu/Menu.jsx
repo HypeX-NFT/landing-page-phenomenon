@@ -83,7 +83,7 @@ const Menu = props => {
 
     const clickNavLinkHandler = e => {
         e.preventDefault();
-
+        console.log(e);
         const id = e.target.getAttribute('href').replace(/^#/, '');
         const $section = sectionsRefs.current.find(sectionRef => sectionRef.current.id === id);
 
@@ -110,7 +110,7 @@ const Menu = props => {
             <nav className={clsx(classes.menu, menuTransitionClass, isActiveMenu && classes.menuActive)}>
                 <ul className={classes.menuList}>
                     {menuItems.map(item => {
-                        if(item.text === 'Whitemap') {
+                        if(item.text === 'WHITEPAPER') {
                             return (
                                 <li key={item.href} className={classes.menuItem}>
                                     <a
