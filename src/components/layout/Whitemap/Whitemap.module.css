@@ -151,10 +151,6 @@
     .whitemapBlock:not(:last-child) {
         margin-bottom: 100px;
     }
-
-    .whitemapCards {
-        font-size: 7px;
-    }
 }
 
 @media (max-width: 991px) {
@@ -173,7 +169,6 @@
 
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         order: 0;
-        margin-left: 0;
     }
 
     .whitemapBlock:not(:nth-child(even)) .whitemapMediaWrap {
@@ -198,6 +193,39 @@
 }
 
 @media (max-width: 767px) {
+    .whitemapBlock:nth-child(even) .whitemapMediaWrap {
+        margin-left: 0;
+    }
+    
+    .whitemapMediaWrap {
+        margin-bottom: 5px;
+        max-width: 620px;
+        width: 100%;
+    }
+
+    .whitemapCard{
+        margin-top: 0;
+    }
+
+    .whitemapCard img {
+        width: 100%;
+    }
+
+    .whitemapCard:first-child {
+        top: 0;
+        left: 18em;
+    }
+    
+    .whitemapCard:nth-child(2) {
+        top: 0;
+        left: 9em;
+    }
+    
+    .whitemapCard:nth-child(3) {
+        top: 0;
+        left: 0;
+    }
+
     .whitemap {
         padding: 85px 0;
     }
@@ -211,27 +239,6 @@
         bottom: 13%;
         left: 7%;
         font-size: 6px;
-    }
-
-    .whitemapMediaWrap {
-        height: auto;
-    }
-
-    .whitemapCards {
-        top: auto;
-        width: 100%;
-        min-width: auto;
-        height: auto;
-    }
-
-    .whitemapCard {
-        display: flex;
-        flex-direction: column;
-        position: static;
-    }
-
-    .whitemapCard:nth-child(odd) {
-        text-align: right; 
     }
     
     .whitemapTitle {
