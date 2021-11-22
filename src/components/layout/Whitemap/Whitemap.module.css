@@ -151,13 +151,13 @@
     .whitemapBlock:not(:last-child) {
         margin-bottom: 100px;
     }
-
-    .whitemapCards {
-        font-size: 7px;
-    }
 }
 
 @media (max-width: 991px) {
+    .whitemapBlock:nth-child(even) .whitemapMediaWrap {
+        margin-left: 0;
+    }
+    
     .whitemapInner::before {
         top: -3%;
         font-size: 5px;
@@ -173,7 +173,6 @@
 
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         order: 0;
-        margin-left: 0;
     }
 
     .whitemapBlock:not(:nth-child(even)) .whitemapMediaWrap {
@@ -198,8 +197,38 @@
 }
 
 @media (max-width: 767px) {
+    
+    .whitemapMediaWrap {
+        margin-bottom: 5px;
+        max-width: 620px;
+        width: 100%;
+    }
+
+    .whitemapCard{
+        margin-top: 0;
+    }
+
+    .whitemapCard img {
+        width: 100%;
+    }
+
+    .whitemapCard:first-child {
+        top: 0;
+        right: 0;
+    }
+    
+    .whitemapCard:nth-child(2) {
+        top: 0;
+        right: 8em;
+    }
+    
+    .whitemapCard:nth-child(3) {
+        top: 0;
+        right: 16em;
+    }
+
     .whitemap {
-        padding: 85px 0;
+        padding: 10px 0;
     }
 
     .whitemapBlock:not(:last-child) {
@@ -211,27 +240,6 @@
         bottom: 13%;
         left: 7%;
         font-size: 6px;
-    }
-
-    .whitemapMediaWrap {
-        height: auto;
-    }
-
-    .whitemapCards {
-        top: auto;
-        width: 100%;
-        min-width: auto;
-        height: auto;
-    }
-
-    .whitemapCard {
-        display: flex;
-        flex-direction: column;
-        position: static;
-    }
-
-    .whitemapCard:nth-child(odd) {
-        text-align: right; 
     }
     
     .whitemapTitle {
