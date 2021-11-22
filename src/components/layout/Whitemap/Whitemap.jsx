@@ -3,8 +3,8 @@ import Container from '@components/layout/Container/Container';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
 import stubImg from '@images/card.gif';
-import airMagImgPng from '@images/AirMAg.png';
-import airMagImgWebp from '@images/AirMAg.webp';
+import jordanImgPng from '@images/jordan1retro.png';
+import jordanImgWebp from '@images/jordan1retro.webp';
 import travisImgPng from '@images/Travis.png';
 import travisImgWebp from '@images/Travis.webp';
 import yeezyImgPng from '@images/Yeezy.png';
@@ -59,8 +59,8 @@ const Whitemap = forwardRef((_, ref) => {
                                     </div>
                                     <div className={classes.whitemapCard} >
                                         <picture>
-                                            <source srcSet={airMagImgWebp} type="image/webp" />
-                                            <img src={airMagImgPng} alt="airMag sneakers" />
+                                            <source srcSet={jordanImgWebp} type="image/webp" />
+                                            <img src={jordanImgPng} alt="airMag sneakers" />
                                         </picture>
                                     </div>
                                 </div>
