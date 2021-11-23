@@ -20,6 +20,8 @@ import {
     VAR_TX_HERO_SECTION_INNER_CIRCLE2,
     VAR_TY_HERO_SECTION_INNER_CIRCLE2,
 } from '@constants';
+
+import Header from './Header/Header';
 import Container from '@components/layout/Container/Container';
 import Socials from '@components/ui/Socials/Socials';
 import AnnouncementBanner from '@components/layout/AnnouncementBanner/AnnouncementBanner';
@@ -115,6 +117,7 @@ const Hero = () => {
 
     return (
         <>
+            <Header />
             <section className={classes.hero} ref={sectionRef}>
                 <Container>
                     <div className={classes.heroInner} ref={sectionInnerRef}>

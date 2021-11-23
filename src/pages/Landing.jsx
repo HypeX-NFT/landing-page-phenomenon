@@ -1,6 +1,5 @@
-import { useRef, useState, useCallback, useEffect } from 'react';
+import { useRef } from 'react';
 import AppContext from '@context/AppContext';
-import Header from '@components/layout/Header/Header';
 import Hero from '@components/layout/Hero/Hero';
 import Whitemap from '@components/layout/Whitemap/Whitemap';
 import Benefits from '@components/layout/Benefits/Benefits';
@@ -24,34 +23,12 @@ const Landing = () => {
         partnersSectionRef,
     ]);
 
-    const [shouldShowHeader, setShouldShowHeader] = useState(true);
-
-    const [y, setY] = useState(window.scrollY);
-
-    const handleNavigation = useCallback(
-        e => {
-            setY(window.scrollY);
-            setShouldShowHeader(y < 25);
-        }, [y]
-    );
-
-    useEffect(() => {
-        setY(window.scrollY);
-        window.addEventListener('scroll', handleNavigation);
-        return () => {
-            window.removeEventListener('scroll', handleNavigation);
-        };
-
-
-    }, [handleNavigation]);
-
     return (
         <AppContext.Provider
             value={{
                 sectionsRefs,
             }}
         >
-            {shouldShowHeader ? <Header /> : null}
             <Hero />
             <Whitemap ref={whitemapSectionRef} />
             <Benefits ref={benefitsSectionRef} />
