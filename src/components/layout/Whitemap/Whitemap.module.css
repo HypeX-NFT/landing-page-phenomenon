@@ -1,6 +1,42 @@
+/* Forward */
+.forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  
+/* Backward */
+.backward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.whitemapCards:hover .backward{
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+
+.whitemapCards:hover .forward{
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+}
+
+/*main css*/
 .whitemap {
     --gutter-x-media-wrap: min(70px, 6vw);
-
     padding: 180px 0;
 }
 
@@ -157,6 +193,15 @@
 }
 
 @media (max-width: 991px) {
+    .whitemapCards:hover .backward{
+        -webkit-transform: translateX(-70px);
+        transform: translateX(-70px);
+    }
+    
+    .whitemapCards:hover .forward{
+        -webkit-transform: translateX(70px);
+        transform: translateX(70px);
+    }
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         margin-left: 0;
     }
