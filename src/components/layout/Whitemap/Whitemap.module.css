@@ -10,13 +10,9 @@
     -webkit-transition-property: transform;
     transition-property: transform;
   }
-  .forward:hover, .forward:focus, .forward:active {
-    -webkit-transform: translateX(150px);
-    transform: translateX(150px);
-  }
   
-  /* Backward */
-  .backward {
+/* Backward */
+.backward {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -26,16 +22,21 @@
     transition-duration: 0.5s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .backward:hover, .backward:focus, .backward:active {
-    -webkit-transform: translateX(-150px);
-    transform: translateX(-150px);
-  }
+}
+
+.whitemapCards:hover .backward{
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+
+.whitemapCards:hover .forward{
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+}
 
 /*main css*/
 .whitemap {
     --gutter-x-media-wrap: min(70px, 6vw);
-
     padding: 180px 0;
 }
 
@@ -192,6 +193,15 @@
 }
 
 @media (max-width: 991px) {
+    .whitemapCards:hover .backward{
+        -webkit-transform: translateX(-70px);
+        transform: translateX(-70px);
+    }
+    
+    .whitemapCards:hover .forward{
+        -webkit-transform: translateX(70px);
+        transform: translateX(70px);
+    }
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         margin-left: 0;
     }
