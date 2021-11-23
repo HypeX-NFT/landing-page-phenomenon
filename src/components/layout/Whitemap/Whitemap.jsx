@@ -66,7 +66,7 @@ const Whitemap = forwardRef((_, ref) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={classes.whitemapTextContent}>
+                            <div className={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
                                 <h3 className={classes.whitemapTitle}>
                                     <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
                                 </h3>

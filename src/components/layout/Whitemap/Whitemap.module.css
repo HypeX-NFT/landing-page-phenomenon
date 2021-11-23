@@ -87,7 +87,7 @@
 }
 
 .whitemapMediaWrap {
-    width: 55%;
+    width: 45%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -144,6 +144,9 @@
 
 .whitemapTextContent {
     width: 50%;
+}
+
+.whitemapTextContentLeft {
     margin-left: 5em;
 }
 
@@ -224,8 +227,11 @@
         font-size: 8px;
     }
 
-    .whitemapTextContent {
+    .whitemapTextContentLeft{
         margin-left: 0;
+    }
+
+    .whitemapTextContent {
         width: 85%;
         max-width: 620px;
     }
@@ -248,17 +254,14 @@
     }
 
     .whitemapCard:first-child {
-        top: 0;
         right: 0;
     }
     
     .whitemapCard:nth-child(2) {
-        top: 0;
         right: 8em;
     }
     
     .whitemapCard:nth-child(3) {
-        top: 0;
         right: 16em;
     }
 
