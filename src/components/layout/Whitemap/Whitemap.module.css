@@ -9,7 +9,7 @@
     transition-duration: 0.5s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
+}
   
 /* Backward */
 .backward {
