@@ -1,3 +1,38 @@
+/* Forward */
+.forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .forward:hover, .forward:focus, .forward:active {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+  
+  /* Backward */
+  .backward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .backward:hover, .backward:focus, .backward:active {
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+
+/*main css*/
 .whitemap {
     --gutter-x-media-wrap: min(70px, 6vw);
 

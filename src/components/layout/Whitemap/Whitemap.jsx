@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
@@ -45,7 +46,7 @@ const Whitemap = forwardRef((_, ref) => {
                         <div className={classes.whitemapBlock}>
                             <div className={classes.whitemapMediaWrap}>
                                 <div className={classes.whitemapCards}>
-                                    <div className={classes.whitemapCard} >
+                                    <div className={clsx(classes.whitemapCard, classes.forward)} >
                                         <picture>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
@@ -57,7 +58,7 @@ const Whitemap = forwardRef((_, ref) => {
                                             <img src={travisImgPng} alt="travis sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={classes.whitemapCard} >
+                                    <div className={clsx(classes.whitemapCard, classes.backward)} >
                                         <picture>
                                             <source srcSet={jordanImgWebp} type="image/webp" />
                                             <img src={jordanImgPng} alt="airMag sneakers" />
