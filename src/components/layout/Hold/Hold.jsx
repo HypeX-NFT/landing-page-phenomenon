@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import FadeInSection from '@components/layout/FadeInSection';
 import Container from '@components/layout/Container/Container';
 import classes from './Hold.module.css';
 import videoMov from '@videos/box-full.mov';
@@ -19,7 +20,7 @@ const Hold = () => {
                                 </video>
                             </div>
                         </div>
-                        <div className={classes.holdBlockRight}>
+                        <FadeInSection classes={classes.holdBlockRight}>
                             <ul className={classes.holdList}>
                                 <li className={classes.holdItem}>
                                     <h4 className={clsx(classes.holdItemTitle, 'color-text-primary')}>1. Discounts</h4>
@@ -44,10 +45,8 @@ const Hold = () => {
                                     </p>
                                 </li>
                             </ul>
-                        </div>
+                        </FadeInSection>
                     </div>
-
-
                 </div>
             </Container>
         </section>

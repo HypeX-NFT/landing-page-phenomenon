@@ -1,5 +1,6 @@
 import { forwardRef } from 'react';
 import clsx from 'clsx';
+import FadeInSection from '@components/layout/FadeInSection';
 import Container from '@components/layout/Container/Container';
 import classes from './Benefits.module.css';
 import sneakerInfoPng from '@images/sneaker-info.png';
@@ -26,15 +27,18 @@ const Benefits = forwardRef((_, ref) => {
                                 </picture>
                             </div>
                             <div className={classes.benefitsTextContent}>
-                                <h3 className={classes.benefitsTextTitle}>Crypto features</h3>
-                                <div className={classes.benefitsText}>
-                                    <p>
+                                <FadeInSection>
+                                    <h3 className={classes.benefitsTextTitle}>Crypto features</h3>
+                                    <div className={classes.benefitsText}>
+                                        <p>
                                         Users can <span className="color-text-primary">stake</span> NFTs to earn yields
                                         as well as <span className="color-text-primary">deposit</span> their NFTs for
                                         collateral loans
-                                    </p>
-                                </div>
+                                        </p>
+                                    </div>
+                                </FadeInSection>
                             </div>
+
                         </div>
                     </div>
                     <div className={classes.benefitsBlock}>
@@ -46,18 +50,21 @@ const Benefits = forwardRef((_, ref) => {
                                 </picture>
                             </div>
                             <div className={classes.benefitsTextContent}>
-                                <h3 className={classes.benefitsTextTitle}>Games</h3>
-                                <div className={classes.benefitsText}>
-                                    <p>
+                                <FadeInSection>
+                                    <h3 className={classes.benefitsTextTitle}>Games</h3>
+                                    <div className={classes.benefitsText}>
+                                        <p>
                                         By playing games and completing interactive tasks, users can earn{' '}
-                                        <span className="color-text-primary">daily rewards.</span>
-                                    </p>
-                                </div>
+                                            <span className="color-text-primary">daily rewards.</span>
+                                        </p>
+                                    </div>
+                                </FadeInSection>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <div className={classes.benefitsMore}>
+                <div className={clsx(classes.hangAnimation, classes.benefitsMore)}>
                     <picture>
                         <source srcSet={shoeWebp} type="image/webp" />
                         <img src={shoePng} alt="more sneakers" />

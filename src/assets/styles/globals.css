@@ -59,6 +59,21 @@
     --animation2: circle-2;
 }
 
+.fade-in-section {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20vh);
+    transition: opacity 1000ms ease-out, transform 600ms ease-out,
+      visibility 1000ms ease-out;
+    will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
 html {
     background-color: var(--color-purple-500);
     background-image: url("../images/BG.jpg");
