@@ -1,23 +1,11 @@
 /* Forward */
+.backward
 .forward {
     display: inline-block;
     vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  
-/* Backward */
-.backward {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     -webkit-transition-property: transform;
@@ -32,6 +20,113 @@
 .whitemapCards:hover .forward{
     -webkit-transform: translateX(100px);
     transform: translateX(100px);
+}
+
+/* Hang */
+@-webkit-keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @-webkit-keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+.hangAnimation1 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 5.5s;
+    animation-duration: 5.5s;
+    -webkit-animation-delay: 0s, .5s;
+    animation-delay: 0s, .5s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.hangAnimation2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 0s, .9s;
+    animation-delay: 0s, .9s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.hangAnimation3 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 6.2s;
+    animation-duration: 6.2s;
+    -webkit-animation-delay: 0s, .7s;
+    animation-delay: 0s, .7s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
 }
 
 /*main css*/

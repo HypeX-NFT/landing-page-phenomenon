@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
+import FadeInSection from '@components/layout/FadeInSection';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
 import stubImg from '@images/card.gif';
@@ -21,9 +22,9 @@ const Whitemap = forwardRef((_, ref) => {
                             <div className={classes.whitemapMediaWrap}>
                                 <img className={classes.whitemapVideo} src={stubImg} alt="" />
                             </div>
-                            <div className={classes.whitemapTextContent}>
+                            <FadeInSection classes={classes.whitemapTextContent}>
                                 <h3 className={classes.whitemapTitle}>
-                                    NFTs for{' '}
+                                        NFTs for{' '}
                                     <span className="d-block">
                                         <span className="color-text-primary">real-world</span> sneakers
                                     </span>
@@ -41,24 +42,29 @@ const Whitemap = forwardRef((_, ref) => {
                                         liquidity of the sneaker market.
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
+
                         </div>
                         <div className={classes.whitemapBlock}>
                             <div className={classes.whitemapMediaWrap}>
                                 <div className={classes.whitemapCards}>
-                                    <div className={clsx(classes.whitemapCard, classes.forward)} >
+                                    <div
+                                        className={clsx(classes.whitemapCard, classes.hangAnimation1)}
+                                    >
                                         <picture>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={classes.whitemapCard} >
+                                    <div className={clsx(classes.whitemapCard, classes.hangAnimation2)} >
                                         <picture>
                                             <source srcSet={travisImgWebp} type="image/webp" />
                                             <img src={travisImgPng} alt="travis sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={clsx(classes.whitemapCard, classes.backward)} >
+                                    <div
+                                        className={clsx(classes.whitemapCard, classes.hangAnimation3)}
+                                    >
                                         <picture>
                                             <source srcSet={jordanImgWebp} type="image/webp" />
                                             <img src={jordanImgPng} alt="airMag sneakers" />
@@ -66,7 +72,8 @@ const Whitemap = forwardRef((_, ref) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
+                            <FadeInSection
+                                classes={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
                                 <h3 className={classes.whitemapTitle}>
                                     <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
                                 </h3>
@@ -83,7 +90,8 @@ const Whitemap = forwardRef((_, ref) => {
                                         metaverse.
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
+
                         </div>
                     </div>
                 </Container>

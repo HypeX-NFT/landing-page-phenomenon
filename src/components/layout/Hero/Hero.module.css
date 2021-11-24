@@ -16,8 +16,7 @@
     height: 11.8em;
     border-radius: 50%;
     background-image: var(--blob-gradient);
-    transform: translate3d(var(--tx-hero-section-circle), var(--ty-hero-section-circle), 0);
-    transition: var(--transition-move);
+    animation: var(--animation1) 7s ease-in alternate infinite;
 }
 
 .heroInner {
@@ -42,8 +41,7 @@
     border-radius: 50%;
     background-image: var(--blob-gradient);
     transform: rotate(-90deg);
-    transform: translate3d(var(--tx-hero-section-inner-circle1), var(--ty-hero-section-inner-circle1), 0);
-    transition: var(--transition-move);
+    animation: var(--animation2) 5s ease-in-out alternate infinite;
 }
 
 .heroInner::after {
@@ -56,8 +54,7 @@
     height: 6.6em;
     border-radius: 50%;
     background-image: var(--blob-gradient);
-    transform: translate3d(var(--tx-hero-section-inner-circle2), var(--ty-hero-section-inner-circle2), 0);
-    transition: var(--transition-move);
+    animation: var(--animation1) 10s ease-out alternate infinite;
 }
 
 .heroSocials {
