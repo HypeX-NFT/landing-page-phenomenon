@@ -37,6 +37,7 @@
     font-size: 25px;
     margin-bottom: 20px;
 }
+
 .holdItem {
     font-size: 20px;
     line-height: 1.3em;
@@ -64,7 +65,8 @@
 }
 
 .holdBlockIconRightAlign{
-    text-align: right;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .holdBlockText{
@@ -80,12 +82,25 @@
 
 @media (max-width: 1199px) {
     .holdInner {
-        width: 95%;
+        width: 100%;
     }
 
     .holdBlockIcon {
         width: 150px;
         height: 121px;
+    }
+
+    .holdBlockIconWrapper{
+        width: 45%;
+    }
+
+    .holdBlockText{
+        width: 55%;
+        padding-right: 0;
+    }
+
+    .holdItem{
+        font-size: 20px;
     }
 }
 
@@ -95,12 +110,8 @@
     }
 
     .holdBlock {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        align-items: center;
+        margin-bottom: 30px;
     }
-
 
     .holdInner::before {
         font-size: 7px;
