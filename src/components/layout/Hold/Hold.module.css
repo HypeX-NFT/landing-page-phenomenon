@@ -75,7 +75,7 @@
 
 .holdBlockIcon{
     width: 222px;
-    height: 222px;
+    height: 180px;
 }
 
 @media (max-width: 1199px) {
@@ -85,7 +85,7 @@
 
     .holdBlockIcon {
         width: 150px;
-        height: 150px;
+        height: 121px;
     }
 }
 
