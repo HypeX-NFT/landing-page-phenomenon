@@ -26,7 +26,7 @@ const Whitemap = forwardRef((_, ref) => {
                                 <h3 className={classes.whitemapTitle}>
                                         NFTs for{' '}
                                     <span className="d-block">
-                                        <span className="color-text-primary">real-world</span> sneakers
+                                        real-world sneakers
                                     </span>
                                 </h3>
                                 <div className={classes.whitemapText}>
@@ -75,7 +75,7 @@ const Whitemap = forwardRef((_, ref) => {
                             <FadeInSection
                                 classes={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
                                 <h3 className={classes.whitemapTitle}>
-                                    <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
+                                    FRACTIONALIZEd NFTs
                                 </h3>
                                 <div className={classes.whitemapText}>
                                     <p>Want to own a pair of 2011 Nike Mag?</p>

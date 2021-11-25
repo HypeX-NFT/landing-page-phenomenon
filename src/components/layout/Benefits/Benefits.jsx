@@ -1,5 +1,6 @@
 import { forwardRef } from 'react';
 import clsx from 'clsx';
+import { useMediaQuery } from '@hooks';
 import FadeInSection from '@components/layout/FadeInSection';
 import Container from '@components/layout/Container/Container';
 import classes from './Benefits.module.css';
@@ -11,11 +12,13 @@ import shoePng from '@images/shoe.png';
 import shoeWebp from '@images/shoe.webp';
 
 const Benefits = forwardRef((_, ref) => {
+    const isMobile = useMediaQuery('(max-width: 767px)');
+
     return (
         <section id="benefits" className={classes.benefits} ref={ref}>
             <Container>
                 <h2 className={clsx(classes.benefitsTitle, 'text-center')}>
-                    <span className="color-text-primary">Benefits</span> of NFT
+                    Benefits of NFT
                 </h2>
                 <div className={classes.benefitsBlocks}>
                     <div className={classes.benefitsBlock}>
@@ -27,7 +30,17 @@ const Benefits = forwardRef((_, ref) => {
                                 </picture>
                             </div>
                             <div className={classes.benefitsTextContent}>
-                                <FadeInSection>
+                                {isMobile ? <>
+                                    <h3 className={classes.benefitsTextTitle}>
+                                        Crypto features
+                                    </h3>
+                                    <div className={classes.benefitsText}>
+                                        <p>
+                                        Users can <span className="color-text-primary">stake</span> NFTs to earn yields
+                                        as well as <span className="color-text-primary">deposit</span> their NFTs for
+                                        collateral loans
+                                        </p>
+                                    </div></> : <FadeInSection>
                                     <h3 className={classes.benefitsTextTitle}>Crypto features</h3>
                                     <div className={classes.benefitsText}>
                                         <p>
@@ -36,7 +49,7 @@ const Benefits = forwardRef((_, ref) => {
                                         collateral loans
                                         </p>
                                     </div>
-                                </FadeInSection>
+                                </FadeInSection>}
                             </div>
 
                         </div>
@@ -50,7 +63,7 @@ const Benefits = forwardRef((_, ref) => {
                                 </picture>
                             </div>
                             <div className={classes.benefitsTextContent}>
-                                <FadeInSection>
+                                {isMobile ? <>
                                     <h3 className={classes.benefitsTextTitle}>Games</h3>
                                     <div className={classes.benefitsText}>
                                         <p>
@@ -58,7 +71,16 @@ const Benefits = forwardRef((_, ref) => {
                                             <span className="color-text-primary">daily rewards.</span>
                                         </p>
                                     </div>
-                                </FadeInSection>
+                                </> : <FadeInSection>
+                                    <h3 className={classes.benefitsTextTitle}>Games</h3>
+                                    <div className={classes.benefitsText}>
+                                        <p>
+                                        By playing games and completing interactive tasks, users can earn{' '}
+                                            <span className="color-text-primary">daily rewards.</span>
+                                        </p>
+                                    </div>
+                                </FadeInSection>}
+
                             </div>
 
                         </div>

@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { rAF } from '@utils';
+import clsx from 'clsx';
 import { useInViewport } from '@hooks';
 import {
     IMG_TRANSLATE_DIVIDER_NUMBER,
@@ -127,10 +128,12 @@ const Hero = () => {
                                     HypeX
                                 </h1>
                                 <div className={classes.heroMainImgWrap}>
-                                    <picture>
-                                        <source srcSet={mainImageWebp} type="image/webp" />
-                                        <img src={mainImagePng} alt="sneaker" ref={imgRef} />
-                                    </picture>
+                                    <div className={clsx(classes.animated, classes.animatedFadeInUp, classes.fadeInUp)}>
+                                        <picture>
+                                            <source srcSet={mainImageWebp} type="image/webp" />
+                                            <img src={mainImagePng} alt="sneaker" ref={imgRef} />
+                                        </picture>
+                                    </div>
                                 </div>
                             </div>
                             <div className={classes.heroSubtitle}>
