@@ -51,7 +51,7 @@ const Whitemap = forwardRef((_, ref) => {
                                     <div
                                         className={clsx(classes.whitemapCard, classes.hangAnimation1)}
                                     >
-                                        <picture>
+                                        <picture className={classes.forward}>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
                                         </picture>
@@ -65,7 +65,7 @@ const Whitemap = forwardRef((_, ref) => {
                                     <div
                                         className={clsx(classes.whitemapCard, classes.hangAnimation3)}
                                     >
-                                        <picture>
+                                        <picture className={classes.backward}>
                                             <source srcSet={jordanImgWebp} type="image/webp" />
                                             <img src={jordanImgPng} alt="airMag sneakers" />
                                         </picture>

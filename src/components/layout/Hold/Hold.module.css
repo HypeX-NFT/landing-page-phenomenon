@@ -4,8 +4,8 @@
 
 .holdInner {
     position: relative;
-    max-width: 1050px;
-    width: 100%;
+    max-width: 1000px;
+    width: 55%;
     margin: 0 auto;
 }
 
@@ -29,32 +29,17 @@
     font-size: 48px;
     line-height: 1.3em;
     text-transform: uppercase;
-    text-shadow: 3px 3px 4px #B77EFF, 1px 1px 1px #000000;
-}
-
-.holdVideoWrap {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.holdVideoWrap video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.holdList {
-    margin-top: 50px;
+    text-shadow:  2px 4px 0px #7100FF, 2px 4px 4px rgba(183,126,255, 0.6);
+    margin-bottom: 40px;
 }
 
 .holdItemTitle {
-    font-size: 21px;
-    margin-bottom: 5px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
+
 .holdItem {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.3em;
 }
 
@@ -66,19 +51,57 @@
     position: relative;
     z-index: 1;
     display: flex;
-    align-items: center;
+    vertical-align: top;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
-.holdBlockLeft{
-    width: 50%;
-    order: 1;
+.holdBlockIconWrapper{
+    width: 35%;
 }
 
-.holdBlockRight{
-    margin: auto auto auto 50px;
-    width: 50%;
-    order: 2;
+.holdBlockIconLeftAlign{
+    text-align: left;
+}
+
+.holdBlockIconRightAlign{
+    text-align: center;
+    margin-right: 5px;
+}
+
+.holdBlockText{
+    width: 65%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.holdBlockIcon{
+    width: 222px;
+    height: 180px;
+}
+
+@media (max-width: 1199px) {
+    .holdInner {
+        width: 100%;
+    }
+
+    .holdBlockIcon {
+        width: 150px;
+        height: 121px;
+    }
+
+    .holdBlockIconWrapper{
+        width: 45%;
+    }
+
+    .holdBlockText{
+        width: 55%;
+        padding-right: 0;
+    }
+
+    .holdItem{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -87,22 +110,7 @@
     }
 
     .holdBlock {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .holdBlockLeft{
-        width: 90%;
-        order: 1;
-    }
-    
-    .holdBlockRight{
-        margin: auto;
-        width: 100%;
-        order: 2;
+        margin-bottom: 30px;
     }
 
     .holdInner::before {
@@ -127,16 +135,6 @@
 
     .holdTitle {
         font-size: 30px;
-    }
-
-    .holdVideoWrap {
-        margin: 30px -20px 0;
-        height: 360px;
-    }
-
-    .holdVideoWrap video {
-        width: 85%;
-        object-fit: cover;
     }
 
     .holdItem {
