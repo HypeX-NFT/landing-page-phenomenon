@@ -26,6 +26,7 @@
 }
 
 .teamTitle {
+    text-shadow: 3px 3px 4px #B77EFF, 1px 1px 1px #000000;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 48px;

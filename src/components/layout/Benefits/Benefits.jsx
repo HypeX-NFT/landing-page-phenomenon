@@ -18,7 +18,7 @@ const Benefits = forwardRef((_, ref) => {
         <section id="benefits" className={classes.benefits} ref={ref}>
             <Container>
                 <h2 className={clsx(classes.benefitsTitle, 'text-center')}>
-                    <span className="color-text-primary">Benefits</span> of NFT
+                    Benefits of NFT
                 </h2>
                 <div className={classes.benefitsBlocks}>
                     <div className={classes.benefitsBlock}>

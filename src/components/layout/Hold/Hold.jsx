@@ -10,7 +10,7 @@ const Hold = () => {
             <Container>
                 <div className={classes.holdInner}>
                     <h2 className={clsx(classes.holdTitle, 'text-center')}>
-                        Why hold <span className="color-text-primary">$HYPEX?</span>
+                        Why hold $HYPEX ?
                     </h2>
                     <div className={classes.holdBlock}>
                         <div className={classes.holdBlockLeft}>
