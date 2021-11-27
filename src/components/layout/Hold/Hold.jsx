@@ -13,7 +13,7 @@ const Hold = () => {
             <Container>
                 <div className={classes.holdInner}>
                     <h2 className={clsx(classes.holdTitle, 'text-center')}>
-                        Why hold $HYPEX ?
+                        Utilities of $HYPEX
                     </h2>
                     <div className={classes.holdBlock}>
                         <div className={clsx(classes.holdBlockIconLeftAlign, classes.holdBlockIconWrapper)}>
