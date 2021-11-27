@@ -13,13 +13,13 @@ const Landing = () => {
     const whitemapSectionRef = useRef(null);
     const benefitsSectionRef = useRef(null);
     const roadmapSectionRef = useRef(null);
-    const teamSectionRef = useRef(null);
+    // const teamSectionRef = useRef(null);
     const partnersSectionRef = useRef(null);
     const sectionsRefs = useRef([
         whitemapSectionRef,
         benefitsSectionRef,
         roadmapSectionRef,
-        teamSectionRef,
+        // teamSectionRef,
         partnersSectionRef,
     ]);
 

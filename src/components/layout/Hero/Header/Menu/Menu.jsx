@@ -9,7 +9,7 @@ const menuItems = [
     { href: 'https://docs.hypex.us/', text: 'WHITEPAPER' },
     { href: '#benefits', text: 'BENEFITS' },
     { href: '#roadmap', text: 'ROADMAP' },
-    { href: '#team', text: 'TEAM' },
+    // { href: '#team', text: 'TEAM' },
     { href: '#partners', text: 'PARTNERS' },
 ];
 
