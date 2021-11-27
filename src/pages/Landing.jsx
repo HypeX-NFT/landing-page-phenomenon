@@ -6,7 +6,7 @@ import Benefits from '@components/layout/Benefits/Benefits';
 import Roadmap from '@components/layout/Roadmap/Roadmap';
 import Hold from '@components/layout/Hold/Hold';
 import Tokenomics from '@components/layout/Tokenomics/Tokenomics';
-import Team from '@components/layout/Team/Team';
+// import Team from '@components/layout/Team/Team';
 import Partners from '@components/layout/Partners/Partners';
 
 const Landing = () => {
@@ -35,7 +35,7 @@ const Landing = () => {
             <Benefits ref={benefitsSectionRef} />
             <Roadmap ref={roadmapSectionRef} />
             <Tokenomics />
-            <Team ref={teamSectionRef} />
+            {/* <Team ref={teamSectionRef} /> */}
             <Partners ref={partnersSectionRef} />
         </AppContext.Provider>
     );
