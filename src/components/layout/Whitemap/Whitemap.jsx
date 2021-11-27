@@ -49,21 +49,21 @@ const Whitemap = forwardRef((_, ref) => {
                             <div className={classes.whitemapMediaWrap}>
                                 <div className={classes.whitemapCards}>
                                     <div
-                                        className={clsx(classes.whitemapCard, classes.hangAnimation1)}
+                                        className={clsx(classes.whitemapCard, classes.forward)}
                                     >
                                         <picture className={classes.forward}>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={clsx(classes.whitemapCard, classes.hangAnimation2)} >
+                                    <div className={clsx(classes.whitemapCard)} >
                                         <picture>
                                             <source srcSet={travisImgWebp} type="image/webp" />
                                             <img src={travisImgPng} alt="travis sneakers" />
                                         </picture>
                                     </div>
                                     <div
-                                        className={clsx(classes.whitemapCard, classes.hangAnimation3)}
+                                        className={clsx(classes.whitemapCard, classes.backward)}
                                     >
                                         <picture className={classes.backward}>
                                             <source srcSet={jordanImgWebp} type="image/webp" />
