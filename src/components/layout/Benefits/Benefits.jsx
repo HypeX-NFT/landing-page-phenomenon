@@ -46,7 +46,7 @@ const Benefits = forwardRef((_, ref) => {
                                         <p>
                                         Users can stake NFTs to earn yields
                                         as well as deposit their NFTs for
-                                        collateral loans
+                                        collateral loans。
                                         </p>
                                     </div>
                                 </FadeInSection>}
