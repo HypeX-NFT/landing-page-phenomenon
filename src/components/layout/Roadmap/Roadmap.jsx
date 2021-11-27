@@ -42,6 +42,11 @@ const Roadmap = forwardRef((_, ref) => {
                                             <li>- Marketplace</li>
                                         </ul>
                                     </li>
+                                    <li>· $HYPEX token contract</li>
+                                    <ul>
+                                        <li>- Contract Audits</li>
+                                        <li>- HYPEX <span className="color-text-primary">IDO/ICO</span> </li>
+                                    </ul>
                                 </ul>
                             </div>
                             <img className={classes.roadmapItemArrow} src={arrow} alt="arrow" />
@@ -58,11 +63,6 @@ const Roadmap = forwardRef((_, ref) => {
                                             <li>- NFT Morph</li>
                                         </ul>
                                     </li>
-                                    <li>· $HYPEX token contract</li>
-                                    <ul>
-                                        <li>- Contract Audits</li>
-                                        <li>- HYPEX <span className="color-text-primary">IDO/ICO</span> </li>
-                                    </ul>
                                 </ul>
                             </div>
                             <img className={classes.roadmapItemArrow} src={arrow} alt="arrow" />

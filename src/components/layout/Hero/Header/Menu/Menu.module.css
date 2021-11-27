@@ -14,7 +14,7 @@
     text-transform: uppercase;
     transition: color 0.2s;
     letter-spacing: 1px;
-    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.269);
 }
 
 .menuItemLink:hover,

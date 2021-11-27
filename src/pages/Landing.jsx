@@ -31,9 +31,9 @@ const Landing = () => {
         >
             <Hero />
             <Whitemap ref={whitemapSectionRef} />
+            <Hold />
             <Benefits ref={benefitsSectionRef} />
             <Roadmap ref={roadmapSectionRef} />
-            <Hold />
             <Tokenomics />
             <Team ref={teamSectionRef} />
             <Partners ref={partnersSectionRef} />

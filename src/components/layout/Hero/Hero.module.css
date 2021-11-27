@@ -1,5 +1,38 @@
-/* Animation */
+.vanishIn {
+    -webkit-animation-name: vanishIn;
+            animation-name: vanishIn;
+  }
+  
+  @-webkit-keyframes vanishIn {
+    0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(2, 2);
+      filter: blur(90px);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+  }
+  @keyframes vanishIn {
+    0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(2, 2);
+      filter: blur(90px);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+  }
 
+/* Animation */
 @keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
@@ -27,11 +60,7 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: both;
-    animation-delay: 1s;
-}
-
-.animatedFadeInUp {
-    opacity: 0
+    animation-delay: 2s;
 }
 
 .fadeInUp {
