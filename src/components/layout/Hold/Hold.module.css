@@ -135,6 +135,7 @@
 
     .holdTitle {
         font-size: 30px;
+        text-shadow:  1px 2px 0px #7100FF, 1px 2px 2px rgba(183,126,255, 0.6);
     }
 
     .holdItem {

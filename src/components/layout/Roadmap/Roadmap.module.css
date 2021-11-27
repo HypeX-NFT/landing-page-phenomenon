@@ -1,6 +1,7 @@
 .roadmapItem:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
+    z-index: 1000;
 }
 
 .roadmapItem {
@@ -167,7 +168,7 @@
     }
 
     .roadmapItem:nth-child(1) {
-        top: 0;
+        top: -10px;
         left: 170px;
     }
 
@@ -176,7 +177,7 @@
     }
 
     .roadmapItem:nth-child(2) {
-        top: 185px;
+        top: 200px;
         left: 185px;
     }
 
