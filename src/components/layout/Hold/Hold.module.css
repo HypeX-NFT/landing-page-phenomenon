@@ -39,7 +39,7 @@
 }
 
 .holdItem {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3em;
 }
 
@@ -53,7 +53,7 @@
     display: flex;
     vertical-align: top;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .holdBlockIconWrapper{
@@ -135,6 +135,7 @@
 
     .holdTitle {
         font-size: 30px;
+        text-shadow:  1px 2px 0px #7100FF, 1px 2px 2px rgba(183,126,255, 0.6);
     }
 
     .holdItem {

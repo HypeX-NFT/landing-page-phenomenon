@@ -128,7 +128,7 @@ const Hero = () => {
                                     HypeX
                                 </h1>
                                 <div className={classes.heroMainImgWrap}>
-                                    <div className={clsx(classes.animated, classes.animatedFadeInUp, classes.fadeInUp)}>
+                                    <div className={clsx(classes.animated, classes.vanishIn)}>
                                         <picture>
                                             <source srcSet={mainImageWebp} type="image/webp" />
                                             <img src={mainImagePng} alt="sneaker" ref={imgRef} />

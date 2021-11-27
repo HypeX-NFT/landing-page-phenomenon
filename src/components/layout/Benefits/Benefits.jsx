@@ -36,17 +36,17 @@ const Benefits = forwardRef((_, ref) => {
                                     </h3>
                                     <div className={classes.benefitsText}>
                                         <p>
-                                        Users can <span className="color-text-primary">stake</span> NFTs to earn yields
-                                        as well as <span className="color-text-primary">deposit</span> their NFTs for
+                                        Users can  stake NFTs to earn yields
+                                        as well as deposit their NFTs for
                                         collateral loans
                                         </p>
                                     </div></> : <FadeInSection>
                                     <h3 className={classes.benefitsTextTitle}>Crypto features</h3>
                                     <div className={classes.benefitsText}>
                                         <p>
-                                        Users can <span className="color-text-primary">stake</span> NFTs to earn yields
-                                        as well as <span className="color-text-primary">deposit</span> their NFTs for
-                                        collateral loans
+                                        Users can stake NFTs to earn yields
+                                        as well as deposit their NFTs for
+                                        collateral loans。
                                         </p>
                                     </div>
                                 </FadeInSection>}
@@ -68,7 +68,7 @@ const Benefits = forwardRef((_, ref) => {
                                     <div className={classes.benefitsText}>
                                         <p>
                                         By playing games and completing interactive tasks, users can earn{' '}
-                                            <span className="color-text-primary">daily rewards.</span>
+                                            daily rewards.
                                         </p>
                                     </div>
                                 </> : <FadeInSection>
@@ -76,7 +76,7 @@ const Benefits = forwardRef((_, ref) => {
                                     <div className={classes.benefitsText}>
                                         <p>
                                         By playing games and completing interactive tasks, users can earn{' '}
-                                            <span className="color-text-primary">daily rewards.</span>
+                                            daily rewards.
                                         </p>
                                     </div>
                                 </FadeInSection>}

@@ -34,7 +34,7 @@ const Whitemap = forwardRef((_, ref) => {
                                         Everything in the HypeX Metaverse will have a physical copy in the real world.
                                     </p>
                                     <p>
-                                        Users can <span className="color-text-primary">trade/collect NFTs</span> to
+                                        Users can trade/collect NFTs to
                                         redeem the actual physical sneaker.
                                     </p>
                                     <p>
@@ -80,13 +80,12 @@ const Whitemap = forwardRef((_, ref) => {
                                 <div className={classes.whitemapText}>
                                     <p>Want to own a pair of 2011 Nike Mag?</p>
                                     <p>
-                                        HypeX offers <span className="color-text-primary">fractionalized NFTs</span> of
+                                        HypeX offers fractionalized NFTs of
                                         physical sneakers.
                                     </p>
                                     <p>
-                                        Users can spend 1/100 of the original price to{' '}
-                                        <span className="color-text-primary">own</span> and{' '}
-                                        <span className="color-text-primary">wear</span> these sneakers in the HypeX
+                                        Users can spend 1/100 of the original price to own and{' '}
+                                        wear these sneakers in the HypeX
                                         metaverse.
                                     </p>
                                 </div>
