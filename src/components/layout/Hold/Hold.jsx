@@ -5,6 +5,7 @@ import invoiceGif from '@images/invoice.gif';
 import unboxGif from '@images/unbox.gif';
 import voteGif from '@images/vote.gif';
 import gameGif from '@images/game.gif';
+import stakingGif from '@images/staking.gif';
 import classes from './Hold.module.css';
 
 const Hold = () => {
@@ -75,6 +76,19 @@ const Hold = () => {
                                 parties for sneaker lovers.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                    <div className={classes.holdBlock}>
+                        <div className={classes.holdBlockText}>
+                            <div className={classes.holdItem}>
+                                <h4 className={clsx(classes.holdItemTitle)}>6. Staking</h4>
+                                <p>
+                                Stake $HYPEX in our liquidity pool to earn yields.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={classes.holdBlockIconWrapper}>
+                            <img className={classes.holdBlockIcon} src={stakingGif} alt="" />
                         </div>
                     </div>
                 </div>
