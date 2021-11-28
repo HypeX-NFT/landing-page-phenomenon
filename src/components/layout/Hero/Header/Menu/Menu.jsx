@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState, useEffect, useContext, memo } from 'react';
 import PropTypes from 'prop-types';
 import AppContext from '@context/AppContext';
@@ -23,7 +24,7 @@ const Menu = props => {
     const { lockScrollY, unlockScrollY } = useDocumentLockScrollY();
 
     const redirect = (link) => {
-        window.location = link;
+        window.open(link, '_blank');
     };
 
     useEffect(() => {
@@ -113,7 +114,6 @@ const Menu = props => {
                             return (
                                 <li key={item.href} className={classes.menuItem}>
                                     <a
-                                        href={item.href}
                                         className={clsx(classes.menuItemLink)}
                                         onClick={() => {
                                             redirect(item.href);
