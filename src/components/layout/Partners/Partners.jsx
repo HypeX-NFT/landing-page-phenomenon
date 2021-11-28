@@ -168,8 +168,9 @@ const partners = [
 
 const Partners = forwardRef((_, ref) => {
     const redirect = (link) => {
-        window.location = link;
+        window.open(link, '_blank');
     };
+
     return (
         <section id="partners" className={classes.partners} ref={ref}>
             <Container>

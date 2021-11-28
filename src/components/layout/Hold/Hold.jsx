@@ -17,7 +17,7 @@ const Hold = () => {
                         Utilities of $HYPEX
                     </h2>
                     <div className={classes.holdBlock}>
-                        <div className={clsx(classes.holdBlockIconLeftAlign, classes.holdBlockIconWrapper)}>
+                        <div className={clsx(classes.holdBlockIconWrapper)}>
                             <img className={classes.holdBlockIcon} src={invoiceGif} alt="" />
                         </div>
                         <div className={classes.holdBlockText}>
@@ -34,12 +34,12 @@ const Hold = () => {
                                 <p>Spend $HYPEX to upgrade and forge sneaker NFTs in our game.</p>
                             </div>
                         </div>
-                        <div className={clsx(classes.holdBlockIconRightAlign, classes.holdBlockIconWrapper)}>
+                        <div className={clsx(classes.holdBlockIconWrapper)}>
                             <img className={classes.holdBlockIcon} src={gameGif} alt="" />
                         </div>
                     </div>
                     <div className={classes.holdBlock}>
-                        <div className={clsx(classes.holdBlockIconRightAlign, classes.holdBlockIconWrapper)}>
+                        <div className={clsx(classes.holdBlockIconWrapper)}>
                             <img className={classes.holdBlockIcon} src={unboxGif} alt="" />
                         </div>
                         <div className={classes.holdBlockText}>
@@ -55,7 +55,7 @@ const Hold = () => {
                             <div className={classes.holdItem}>
                                 <h4 className={clsx(classes.holdItemTitle)}>4. Dao</h4>
                                 <p>
-                                Participate in DAO where you can vote on HypeX’s future regarding merchandise selection,
+                                Vote on HypeX’s future regarding merchandise selection,
                                 event hosting, and new features.
                                 </p>
                             </div>
@@ -65,7 +65,7 @@ const Hold = () => {
                         </div>
                     </div>
                     <div className={classes.holdBlock}>
-                        <div className={clsx(classes.holdBlockIconRightAlign, classes.holdBlockIconWrapper)}>
+                        <div className={clsx(classes.holdBlockIconWrapper)}>
                             <img className={classes.holdBlockIcon} src={djGif} alt="" />
                         </div>
                         <div className={classes.holdBlockText}>
