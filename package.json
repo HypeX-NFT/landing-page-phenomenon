@@ -32,7 +32,6 @@
         "postcss": "7.0.35"
     },
     "scripts": {
-        "postbuild": "react-snap",
         "start": "craco start",
         "build": "craco build",
         "test": "craco test",

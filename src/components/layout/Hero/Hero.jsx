@@ -27,8 +27,7 @@ import Container from '@components/layout/Container/Container';
 import Socials from '@components/ui/Socials/Socials';
 import AnnouncementBanner from '@components/layout/AnnouncementBanner/AnnouncementBanner';
 import classes from './Hero.module.css';
-import mainImagePng from '@images/sneakers.png';
-import mainImageWebp from '@images/sneakers.webp';
+import mainImagePng from '@images/sneaker.png';
 
 const Hero = () => {
     const imgRef = useRef(null);
@@ -130,7 +129,6 @@ const Hero = () => {
                                 <div className={classes.heroMainImgWrap}>
                                     <div className={clsx(classes.animated, classes.vanishIn)}>
                                         <picture>
-                                            <source srcSet={mainImageWebp} type="image/webp" />
                                             <img src={mainImagePng} alt="sneaker" ref={imgRef} />
                                         </picture>
                                     </div>
