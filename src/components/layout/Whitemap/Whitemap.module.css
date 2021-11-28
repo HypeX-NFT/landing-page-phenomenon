@@ -5,12 +5,12 @@
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 1.5s;
-    transition-duration: 1.5s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
   
 /* Backward */
@@ -20,22 +20,22 @@
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 1.5s;
-    transition-duration: 1.5s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 .whitemapCards:hover .backward{
-    -webkit-transform: translateX(-90px);
-    transform: translateX(-90px);
+    -webkit-transform: translateX(-80px);
+    transform: translateX(-80px);
 }
 
 .whitemapCards:hover .forward{
-    -webkit-transform: translateX(90px);
-    transform: translateX(90px);
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
 }
 
 /* Hang */
@@ -238,6 +238,8 @@
     max-width: 40em;
     max-height: 40em;
     object-fit: contain;
+    display:block;
+    margin: auto;
 }
 
 .whitemapCard:first-child {
@@ -305,16 +307,7 @@
     }
 }
 
-@media (max-width: 991px) {
-    .whitemapCards:hover .backward{
-        -webkit-transform: translateX(-70px);
-        transform: translateX(-70px);
-    }
-    
-    .whitemapCards:hover .forward{
-        -webkit-transform: translateX(70px);
-        transform: translateX(70px);
-    }
+@media (max-width: 991px) {    
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         margin-left: 0;
     }
@@ -361,11 +354,10 @@
 }
 
 @media (max-width: 767px) {
-    
+
     .whitemapMediaWrap {
-        margin-bottom: 5px;
-        max-width: 620px;
-        width: 100%;
+        margin-bottom: 40px;
+        height: 350px;
     }
 
     .whitemapCard{
@@ -373,9 +365,18 @@
     }
 
     .whitemapCard img {
-        width: 100%;
+        width: 65%;
     }
 
+    .whitemapCards:hover .forward{
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+
+    .whitemapCards:hover .backward{
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
     .whitemapCard:first-child {
         right: 0;
     }
