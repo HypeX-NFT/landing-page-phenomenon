@@ -1,0 +1,137 @@
+.menuList {
+    display: flex;
+    align-items: center;
+}
+
+.menuItem:not(.menuItem:last-child) {
+    margin-right: 50px;
+}
+
+.menuItemLink {
+    display: block;
+    font-family: var(--third-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgba(183, 126, 255 0.3);
+}
+
+.menuItemLink:hover,
+.menuItemLinkActive {
+    color: var(--color-purple-200);
+}
+
+.menuToggler {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(61, 6, 128, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 0;
+        z-index: 10;
+    }
+
+    .menuList {
+        display: block;
+        text-align: center;
+        overflow: auto;
+        padding: 0 20px;
+    }
+
+    .menuItem:not(.menuItem:last-child) {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .menuTransition {
+        transition: opacity 0.3s;
+    }
+
+    .menuActive {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .menuToggler {
+        display: block;
+        appearance: none;
+        font-size: 10px;
+        width: 3em;
+        height: 1.8em;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    .menuToggler:hover span,
+    .menuToggler:hover::before,
+    .menuToggler:hover::after {
+        width: 100%;
+    }
+
+    .menuToggler span,
+    .menuToggler::before,
+    .menuToggler::after {
+        position: absolute;
+        right: 0;
+        height: 0.3em;
+        border-radius: 2.5em;
+        background-color: var(--color-primary);
+    }
+
+    .menuToggler span {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: opacity 0.1s, width 0.2s;
+        width: 80%;
+    }
+
+    .menuToggler::before,
+    .menuToggler::after {
+        content: "";
+        transition: all 0.2s;
+    }
+
+    .menuToggler::before {
+        top: 0;
+        width: 100%;
+    }
+
+    .menuToggler::after {
+        bottom: 0;
+        width: 60%;
+    }
+
+    .menuTogglerActive span {
+        opacity: 0;
+        width: 100%;
+    }
+
+    .menuTogglerActive::before {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) rotate(45deg);
+    }
+
+    .menuTogglerActive::after {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%) rotate(-45deg);
+        width: 100%;
+    }
+}

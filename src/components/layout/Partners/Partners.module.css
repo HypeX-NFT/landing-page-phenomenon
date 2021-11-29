@@ -9,6 +9,22 @@
     background-position: center;
 }
 
+.black{
+    display: block;
+}
+
+.color {
+    display: none;
+}
+
+.partnersItemInner:hover .black{
+    display: none;
+}
+
+.partnersItemInner:hover .color{
+    display: block;
+}
+
 .partners::after {
     content: "";
     position: absolute;

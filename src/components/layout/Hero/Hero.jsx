@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { rAF } from '@utils';
+import clsx from 'clsx';
 import { useInViewport } from '@hooks';
 import {
     IMG_TRANSLATE_DIVIDER_NUMBER,
@@ -20,12 +21,13 @@ import {
     VAR_TX_HERO_SECTION_INNER_CIRCLE2,
     VAR_TY_HERO_SECTION_INNER_CIRCLE2,
 } from '@constants';
+
+import Header from './Header/Header';
 import Container from '@components/layout/Container/Container';
 import Socials from '@components/ui/Socials/Socials';
 import AnnouncementBanner from '@components/layout/AnnouncementBanner/AnnouncementBanner';
 import classes from './Hero.module.css';
-import mainImagePng from '@images/sneakers.png';
-import mainImageWebp from '@images/sneakers.webp';
+import mainImagePng from '@images/sneaker.png';
 
 const Hero = () => {
     const imgRef = useRef(null);
@@ -115,6 +117,7 @@ const Hero = () => {
 
     return (
         <>
+            <Header />
             <section className={classes.hero} ref={sectionRef}>
                 <Container>
                     <div className={classes.heroInner} ref={sectionInnerRef}>
@@ -124,10 +127,11 @@ const Hero = () => {
                                     HypeX
                                 </h1>
                                 <div className={classes.heroMainImgWrap}>
-                                    <picture>
-                                        <source srcSet={mainImageWebp} type="image/webp" />
-                                        <img src={mainImagePng} alt="sneaker" ref={imgRef} />
-                                    </picture>
+                                    <div className={clsx(classes.animated, classes.vanishIn)}>
+                                        <picture>
+                                            <img src={mainImagePng} alt="sneaker" ref={imgRef} />
+                                        </picture>
+                                    </div>
                                 </div>
                             </div>
                             <div className={classes.heroSubtitle}>

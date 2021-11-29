@@ -1,3 +1,67 @@
+/* Hang */
+@-webkit-keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @-webkit-keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+
+.hangAnimation {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 1.5s, 6s;
+    animation-duration: 1.5s, 6s;
+    -webkit-animation-delay: 0s, .5s;
+    animation-delay: 0s, .5s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
 .benefits {
     --gutter-x-media-wrap: min(70px, 6vw);
 
@@ -11,6 +75,7 @@
     font-size: 42px;
     line-height: 1.3em;
     text-transform: uppercase;
+    text-shadow: 2px 4px 0px #7100FF, 2px 4px 4px rgba(183,126,255, 0.6);
 }
 
 .benefitsBlocks {
@@ -40,8 +105,8 @@
 .benefitsBlock:first-child .benefitsMedia {
     background-color: #0e0c2d;
     border-radius: 25px;
-    padding: 60px;
-    box-shadow: 14px 14px 7px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
 }
 
 .benefitsBlock:first-child::before {
@@ -155,6 +220,7 @@
 @media (max-width: 767px) {
     .benefitsTitle {
         font-size: 35px;
+        text-shadow:  1px 2px 0px #7100FF, 1px 2px 2px rgba(183,126,255, 0.6);
     }
 
     .benefitsBlock:first-child::before,

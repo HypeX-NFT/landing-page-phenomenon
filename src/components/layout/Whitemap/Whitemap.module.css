@@ -1,6 +1,154 @@
+/* Forward */
+.forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: cubic-bezier(.27,.12,.22,.61);
+    transition-timing-function: cubic-bezier(.27,.12,.22,.61);
+}
+  
+/* Backward */
+.backward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: cubic-bezier(.27,.12,.22,.61);
+    transition-timing-function: cubic-bezier(.27,.12,.22,.61);
+}
+
+.whitemapCards:hover .backward{
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+
+.whitemapCards:hover .forward{
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+/* Hang */
+@-webkit-keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation {
+    0% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @-webkit-keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+  @keyframes hangAnimation-sink {
+    100% {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  }
+
+.hangAnimation1 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 5.5s;
+    animation-duration: 5.5s;
+    -webkit-animation-delay: 0s, .5s;
+    animation-delay: 0s, .5s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.hangAnimation2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 0s, .9s;
+    animation-delay: 0s, .9s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.hangAnimation3 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hangAnimation-sink, hangAnimation;
+    animation-name: hangAnimation-sink, hangAnimation;
+    -webkit-animation-duration: 6.2s;
+    animation-duration: 6.2s;
+    -webkit-animation-delay: 0s, .7s;
+    animation-delay: 0s, .7s;
+    -webkit-animation-timing-function: ease-out, ease-in;
+    animation-timing-function: ease-out, ease-in;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+/*main css*/
 .whitemap {
     --gutter-x-media-wrap: min(70px, 6vw);
-
     padding: 180px 0;
 }
 
@@ -52,7 +200,7 @@
 }
 
 .whitemapMediaWrap {
-    width: 55%;
+    width: 45%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -90,6 +238,8 @@
     max-width: 40em;
     max-height: 40em;
     object-fit: contain;
+    display:block;
+    margin: auto;
 }
 
 .whitemapCard:first-child {
@@ -109,6 +259,9 @@
 
 .whitemapTextContent {
     width: 50%;
+}
+
+.whitemapTextContentLeft {
     margin-left: 5em;
 }
 
@@ -118,6 +271,7 @@
     font-size: 42px;
     line-height: 1.3em;
     text-transform: uppercase;
+    text-shadow: 2px 4px 0px #7100FF, 2px 4px 4px rgba(183,126,255, 0.6);
 }
 
 .whitemapText {
@@ -153,7 +307,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) {    
     .whitemapBlock:nth-child(even) .whitemapMediaWrap {
         margin-left: 0;
     }
@@ -189,19 +343,21 @@
         font-size: 8px;
     }
 
-    .whitemapTextContent {
+    .whitemapTextContentLeft{
         margin-left: 0;
+    }
+
+    .whitemapTextContent {
         width: 85%;
         max-width: 620px;
     }
 }
 
 @media (max-width: 767px) {
-    
+
     .whitemapMediaWrap {
-        margin-bottom: 5px;
-        max-width: 620px;
-        width: 100%;
+        margin-bottom: 40px;
+        height: 350px;
     }
 
     .whitemapCard{
@@ -209,22 +365,28 @@
     }
 
     .whitemapCard img {
-        width: 100%;
+        width: 65%;
     }
 
+    .whitemapCards:hover .forward{
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+
+    .whitemapCards:hover .backward{
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
     .whitemapCard:first-child {
-        top: 0;
         right: 0;
     }
     
     .whitemapCard:nth-child(2) {
-        top: 0;
         right: 8em;
     }
     
     .whitemapCard:nth-child(3) {
-        top: 0;
-        right: 16em;
+        right: 16.5em;
     }
 
     .whitemap {
@@ -244,6 +406,7 @@
     
     .whitemapTitle {
         font-size: 22px;
+        text-shadow:  1px 2px 0px #7100FF, 1px 2px 2px rgba(183,126,255, 0.6);
     }
 
     .whitemapText {

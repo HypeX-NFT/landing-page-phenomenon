@@ -1,5 +1,7 @@
 import { forwardRef } from 'react';
+import clsx from 'clsx';
 import Container from '@components/layout/Container/Container';
+import FadeInSection from '@components/layout/FadeInSection';
 import MetaverseBanner from '@components/layout/MetaverseBanner/MetaverseBanner';
 import classes from './Whitemap.module.css';
 import stubImg from '@images/card.gif';
@@ -20,11 +22,11 @@ const Whitemap = forwardRef((_, ref) => {
                             <div className={classes.whitemapMediaWrap}>
                                 <img className={classes.whitemapVideo} src={stubImg} alt="" />
                             </div>
-                            <div className={classes.whitemapTextContent}>
+                            <FadeInSection classes={classes.whitemapTextContent}>
                                 <h3 className={classes.whitemapTitle}>
-                                    NFTs for{' '}
+                                        NFTs for{' '}
                                     <span className="d-block">
-                                        <span className="color-text-primary">real-world</span> sneakers
+                                        real-world sneakers
                                     </span>
                                 </h3>
                                 <div className={classes.whitemapText}>
@@ -32,7 +34,7 @@ const Whitemap = forwardRef((_, ref) => {
                                         Everything in the HypeX Metaverse will have a physical copy in the real world.
                                     </p>
                                     <p>
-                                        Users can <span className="color-text-primary">trade/collect NFTs</span> to
+                                        Users can trade/collect NFTs to
                                         redeem the actual physical sneaker.
                                     </p>
                                     <p>
@@ -40,49 +42,55 @@ const Whitemap = forwardRef((_, ref) => {
                                         liquidity of the sneaker market.
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
+
                         </div>
                         <div className={classes.whitemapBlock}>
                             <div className={classes.whitemapMediaWrap}>
                                 <div className={classes.whitemapCards}>
-                                    <div className={classes.whitemapCard} >
-                                        <picture>
+                                    <div
+                                        className={clsx(classes.whitemapCard, classes.forward)}
+                                    >
+                                        <picture className={classes.forward}>
                                             <source srcSet={yeezyImgWebp} type="image/webp" />
                                             <img src={yeezyImgPng} alt="yeezy sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={classes.whitemapCard} >
+                                    <div className={clsx(classes.whitemapCard)} >
                                         <picture>
                                             <source srcSet={travisImgWebp} type="image/webp" />
                                             <img src={travisImgPng} alt="travis sneakers" />
                                         </picture>
                                     </div>
-                                    <div className={classes.whitemapCard} >
-                                        <picture>
+                                    <div
+                                        className={clsx(classes.whitemapCard, classes.backward)}
+                                    >
+                                        <picture className={classes.backward}>
                                             <source srcSet={jordanImgWebp} type="image/webp" />
                                             <img src={jordanImgPng} alt="airMag sneakers" />
                                         </picture>
                                     </div>
                                 </div>
                             </div>
-                            <div className={classes.whitemapTextContent}>
+                            <FadeInSection
+                                classes={clsx(classes.whitemapTextContentLeft, classes.whitemapTextContent)}>
                                 <h3 className={classes.whitemapTitle}>
-                                    <span className="color-text-primary">FRACTIONALIZEd</span> NFTs
+                                    FRACTIONALIZEd NFTs
                                 </h3>
                                 <div className={classes.whitemapText}>
                                     <p>Want to own a pair of 2011 Nike Mag?</p>
                                     <p>
-                                        HypeX offers <span className="color-text-primary">fractionalized NFTs</span> of
+                                        HypeX offers fractionalized NFTs of
                                         physical sneakers.
                                     </p>
                                     <p>
-                                        Users can spend 1/100 of the original price to{' '}
-                                        <span className="color-text-primary">own</span> and{' '}
-                                        <span className="color-text-primary">wear</span> these sneakers in the HypeX
+                                        Users can spend 1/100 of the original price to own and{' '}
+                                        wear these sneakers in the HypeX
                                         metaverse.
                                     </p>
                                 </div>
-                            </div>
+                            </FadeInSection>
+
                         </div>
                     </div>
                 </Container>
