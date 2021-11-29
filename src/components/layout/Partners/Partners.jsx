@@ -156,13 +156,13 @@ const partners = [
         srcPng: logo19Png,
         srcPngColor: logo19ColorPng,
         alt: 'Logo',
-        link: 'https://supbrousa.com/',
+        link: 'https://www.kinjaz.com/',
     },
     {
         srcPng: logo20Png,
         srcPngColor: logo20ColorPng,
         alt: 'Logo',
-        link: 'https://www.kinjaz.com/',
+        link: 'https://supbrousa.com/',
     },
 ];
 
