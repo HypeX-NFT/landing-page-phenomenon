@@ -57,17 +57,12 @@
 }
 
 .partnersItem {
-    border-radius: 10px;
-    background-image: linear-gradient(319.25deg, #a502f2 -2.14%, rgba(165, 2, 242, 0) 54.08%, #a502f2 97.8%);
     padding: 1px;
 }
 
 .partnersItemInner {
     position: relative;
     z-index: 1;
-    border-radius: 10px;
-    background-color: var(--color-purple-600);
-    box-shadow: inset 8px 8px 7px rgba(0, 0, 0, 0.25);
     padding: 10px;
     display: flex;
     align-items: center;
