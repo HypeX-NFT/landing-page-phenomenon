@@ -14,7 +14,7 @@ const AnnouncementBanner = () => {
                     </h2>
                     <a href="/" target="_blank" rel="noopener noreferrer" className={classes.bannerLink}>
                     </a>
-                    <div className={classes.bannerEventDate}>CHRISTMAS 2021</div>
+                    <div className={classes.bannerEventDate}>Q1 2022</div>
                 </div>
             </Container>
         </div>
